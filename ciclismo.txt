@@ -1,0 +1,10 @@
+BMX;individual;Final,25/08/2020;;090909787;
+BTT;individual;Final,25/08/2020;;090909787;
+Estrada;individual;Final,25/08/2020;;102938475,546372819,565372819;
+Contrarrelogio;individual;Final,25/08/2020;;565372819;
+Contrarrelogio;individual;Final,25/08/2020;;565372819;
+Velocidade;individual;Final,25/08/2020;;102938475;
+Velocidade por Equipas;coletivo;Final,25/08/2020;;102938475,365656512;
+Perseguicao por Equipas;coletivo;Final,25/08/2020;;102938475,365656512;
+Keirin;individual;Final,25/08/2020;;672718236;
+Omnium;individual;Final,25/08/2020;;909862513;

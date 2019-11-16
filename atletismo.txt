@@ -1,0 +1,16 @@
+20km marcha Masculino;individual;Final,21/08/2020;;123456789,987654321;
+50km marcha Masculino;individual;Final,21/08/2020;;987654321,234567890,345678901;
+Maratona Masculino;individual;Final,21/08/2020;;456789012,567890123;
+Lancamento de peso Masculino;individual;Eliminatorias,19/08/2020;Final,21/08/2020;;383838384;
+Triplo Salto Masculino;individual;Eliminatorias,19/08/2020;Final,21/08/2020;;202020201;
+100m Feminino;individual;Quartos de Final,19/08/2020;Meias Finais,19/08/2020;Final,21/08/2020;;364819001;
+200m Feminino;individual;Eliminatorias,17/08/2020;Meias Finais,19/08/2020;Final,21/08/2020;;364819001;
+400m Feminino;individual;Eliminatorias,17/08/2020;Meias Finais,19/08/2020;Final,21/08/2020;;355264861;
+400m barreiras Feminino;individual;Eliminatorias,17/08/2020;Meias Finais,19/08/2020;Final,21/08/2020;;172884758;
+1500m Feminino;individual;Eliminatorias,17/08/2020;Meias Finais,17/08/2020;Final,21/08/2020;;312322567;
+10.000m Feminino;individual;Final,21/08/2020;;127748590;
+20km marcha Feminino;individual;Final,21/08/2020;;239555768,0012933345,118822337;
+Maratona Feminino;individual;Final,21/08/2020;;112385769,117723346,255553647;
+Triplo Salto Feminino;individual;Eliminatorias,19/08/2020;Final,21/08/2020;;236577689,234567947;
+Salto com Vara Feminino;individual;Eliminatorias,19/08/2020;Final,21/08/2020;;236577689,234567947;
+Lancamento do Disco Feminino;individual;Eliminatorias,19/08/2020;Final,19/08/2020;;293845777;

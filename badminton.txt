@@ -1,0 +1,5 @@
+Singulares Masculino;individual;Oitavos de final,17/08/2020;Quartos de final,18/08/2020;Meia final,20/08/2020;Bronze,22/08/2020;Final,23/08/2020;;727272722,123454321;
+Singulares Feminino;individual;Oitavos de final,17/08/2020;Quartos de final,18/08/2020;Meia final,20/08/2020;Bronze,22/08/2020;Final,23/08/2020;;902939211,565172637;
+Pares Masculino;coletivo;Quartos de final,18/08/2020;Meia final,20/08/2020;Bronze,22/08/2020;Final,23/08/2020;;727272722,123454321;
+Pares Feminino;coletivo;Quartos de final,18/08/2020;Meia final,20/08/2020;Bronze,22/08/2020;Final,23/08/2020;;902939211,565172637;
+Pares Misto;coletivo;Quartos de final,18/08/2020;Meia final,20/08/2020;Bronze,22/08/2020;Final,23/08/2020;;902939211,727272722;

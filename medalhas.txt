@@ -1,0 +1,4 @@
+Portugal 19 6 2
+Estados Unidos 50 63 29
+China 28 80 70
+Zimbabwe 0 0 1

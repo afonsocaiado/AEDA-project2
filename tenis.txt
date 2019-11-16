@@ -1,0 +1,2 @@
+Singulares Masculino;individual;1a Ronda,17/08/2020;2a Ronda,17/08/2020;Oitavos de Final,17/08/2020;Quartos de Final,17/08/2020;Meia Final,17/08/2020;Bronze,17/08/2020;Final,17/08/2020;;172837281,627162738;
+Pares Masculino;coletivo;1a Ronda,17/08/2020;Oitavos de Final,17/08/2020;Quartos de Final,17/08/2020;Meia Final,17/08/2020;Bronze,17/08/2020;Final,17/08/2020;;172837281,627162738;

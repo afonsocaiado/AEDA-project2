@@ -1,0 +1,6 @@
+Menos de 66kg Masculino;individual;Quartos de Final,19/08/2020;Meia Final,22/08/2020;Bronze,24/08/2020;Final,25/08/2020;;090000345;
+Menos de 73kg Masculino;individual;Quartos de Final,19/08/2020;Meia Final,22/08/2020;Bronze,24/08/2020;Final,25/08/2020;;123912345;
+Menos de 90kg Masculino;individual;Quartos de Final,19/08/2020;Meia Final,22/08/2020;Bronze,24/08/2020;Final,25/08/2020;;671223112;
+Menos de 100kg Masculino;individual;Quartos de Final,19/08/2020;Meia Final,22/08/2020;Bronze,24/08/2020;Final,25/08/2020;;574477444;
+Menos de 52kg Feminino;individual;Quartos de Final,19/08/2020;Meia Final,22/08/2020;Bronze,24/08/2020;Final,25/08/2020;;121000345;
+Menos de 57kg Feminino;individual;Quartos de Final,19/08/2020;Meia Final,22/08/2020;Bronze,24/08/2020;Final,25/08/2020;;333234345;

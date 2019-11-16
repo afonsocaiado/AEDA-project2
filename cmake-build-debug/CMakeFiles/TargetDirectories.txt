@@ -1,0 +1,3 @@
+/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/afonsocaiado/Desktop/FACULDADE/ANO 2 /SEM 1/AEDA/TRABALHO AEDA/TrabalhoAEDAParte1/cmake-build-debug/CMakeFiles/TrabalhoAEDAParte1.dir

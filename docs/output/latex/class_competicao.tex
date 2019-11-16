@@ -1,0 +1,152 @@
+\hypertarget{class_competicao}{}\doxysection{Competicao Class Reference}
+\label{class_competicao}\index{Competicao@{Competicao}}
+
+
+{\ttfamily \#include $<$competicao.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_competicao_a5fc5a4f6b32eeee7b40d67855b46e16f}\label{class_competicao_a5fc5a4f6b32eeee7b40d67855b46e16f}} 
+\mbox{\hyperlink{class_competicao_a5fc5a4f6b32eeee7b40d67855b46e16f}{Competicao}} ()
+\begin{DoxyCompactList}\small\item\em Construtor vazio da Competição. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_competicao_ae85ec5d3fda348fe1e79bcb8b0163242}{Competicao}} (string nome, bool individual)
+\item 
+vector$<$ \mbox{\hyperlink{class_prova}{Prova}} $>$ \mbox{\hyperlink{class_competicao_a725c2af93ed8207a742c0fa35f4077fb}{get\+Provas}} ()
+\item 
+bool \mbox{\hyperlink{class_competicao_a935105a3a574a8cab37e47634f9756bc}{get\+Individual}} ()
+\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_competicao_ae5a7831fa4831d700051a8d7d8352596}{get\+Medalhados}} ()
+\item 
+void \mbox{\hyperlink{class_competicao_a6c8b9619401881e755df9a4c013237bb}{set\+Provas}} (vector$<$ \mbox{\hyperlink{class_prova}{Prova}} $>$ provas)
+\item 
+void \mbox{\hyperlink{class_competicao_a45166003f679b9d9678ef4206ecea5cc}{set\+Medalhados}} (vector$<$ string $>$ medalhados)
+\item 
+bool \mbox{\hyperlink{class_competicao_a57d89d431e34d9fe844b61a1a382894c}{add\+Prova}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+istream \& \mbox{\hyperlink{class_competicao_a55869990f4f1d1807339ea9262aed979}{operator$>$$>$}} (istream \&i, \mbox{\hyperlink{class_competicao}{Competicao}} \&c)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe \mbox{\hyperlink{class_competicao}{Competicao}}. Classe relativa às competições. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_competicao_ae85ec5d3fda348fe1e79bcb8b0163242}\label{class_competicao_ae85ec5d3fda348fe1e79bcb8b0163242}} 
+\index{Competicao@{Competicao}!Competicao@{Competicao}}
+\index{Competicao@{Competicao}!Competicao@{Competicao}}
+\doxysubsubsection{\texorpdfstring{Competicao()}{Competicao()}}
+{\footnotesize\ttfamily Competicao\+::\+Competicao (\begin{DoxyParamCaption}\item[{string}]{nome,  }\item[{bool}]{individual }\end{DoxyParamCaption})}
+
+Construtor da Competição.
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome} & Nome da competição \\
+\hline
+{\em individual} & Booleano relativo a ser individual ou coletiva (true se for individual) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_competicao_a57d89d431e34d9fe844b61a1a382894c}\label{class_competicao_a57d89d431e34d9fe844b61a1a382894c}} 
+\index{Competicao@{Competicao}!addProva@{addProva}}
+\index{addProva@{addProva}!Competicao@{Competicao}}
+\doxysubsubsection{\texorpdfstring{addProva()}{addProva()}}
+{\footnotesize\ttfamily bool Competicao\+::add\+Prova (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Método para adicionar uma Provas.
+
+\begin{DoxyReturn}{Returns}
+Retorna o sucesso ou insucesso do método 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_competicao_a935105a3a574a8cab37e47634f9756bc}\label{class_competicao_a935105a3a574a8cab37e47634f9756bc}} 
+\index{Competicao@{Competicao}!getIndividual@{getIndividual}}
+\index{getIndividual@{getIndividual}!Competicao@{Competicao}}
+\doxysubsubsection{\texorpdfstring{getIndividual()}{getIndividual()}}
+{\footnotesize\ttfamily bool Competicao\+::get\+Individual (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Método get do booleano Individual.
+
+\begin{DoxyReturn}{Returns}
+Retorna o booleano Individual (true se for individual) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_competicao_ae5a7831fa4831d700051a8d7d8352596}\label{class_competicao_ae5a7831fa4831d700051a8d7d8352596}} 
+\index{Competicao@{Competicao}!getMedalhados@{getMedalhados}}
+\index{getMedalhados@{getMedalhados}!Competicao@{Competicao}}
+\doxysubsubsection{\texorpdfstring{getMedalhados()}{getMedalhados()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Competicao\+::get\+Medalhados (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Método get dos medalhados da competição.
+
+\begin{DoxyReturn}{Returns}
+Retorna o vetor de medalhados da competição 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_competicao_a725c2af93ed8207a742c0fa35f4077fb}\label{class_competicao_a725c2af93ed8207a742c0fa35f4077fb}} 
+\index{Competicao@{Competicao}!getProvas@{getProvas}}
+\index{getProvas@{getProvas}!Competicao@{Competicao}}
+\doxysubsubsection{\texorpdfstring{getProvas()}{getProvas()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_prova}{Prova}} $>$ Competicao\+::get\+Provas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Método get do vetor de Provas da competição.
+
+\begin{DoxyReturn}{Returns}
+Retorna o vetor de Provas 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_competicao_a45166003f679b9d9678ef4206ecea5cc}\label{class_competicao_a45166003f679b9d9678ef4206ecea5cc}} 
+\index{Competicao@{Competicao}!setMedalhados@{setMedalhados}}
+\index{setMedalhados@{setMedalhados}!Competicao@{Competicao}}
+\doxysubsubsection{\texorpdfstring{setMedalhados()}{setMedalhados()}}
+{\footnotesize\ttfamily void Competicao\+::set\+Medalhados (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{medalhados }\end{DoxyParamCaption})}
+
+Método set do vetor de medalhados (string) da competição.
+
+
+\begin{DoxyParams}{Parameters}
+{\em medalhados} & Vetor de medalhados da competição \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_competicao_a6c8b9619401881e755df9a4c013237bb}\label{class_competicao_a6c8b9619401881e755df9a4c013237bb}} 
+\index{Competicao@{Competicao}!setProvas@{setProvas}}
+\index{setProvas@{setProvas}!Competicao@{Competicao}}
+\doxysubsubsection{\texorpdfstring{setProvas()}{setProvas()}}
+{\footnotesize\ttfamily void Competicao\+::set\+Provas (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_prova}{Prova}} $>$}]{provas }\end{DoxyParamCaption})}
+
+Método set do vetor de Provas.
+
+
+\begin{DoxyParams}{Parameters}
+{\em provas} & Vetor de provas da competição \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_competicao_a55869990f4f1d1807339ea9262aed979}\label{class_competicao_a55869990f4f1d1807339ea9262aed979}} 
+\index{Competicao@{Competicao}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Competicao@{Competicao}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{i,  }\item[{\mbox{\hyperlink{class_competicao}{Competicao}} \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Operador de input da competição. Permite ler uma competição de uma stream de input.
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Stream de input \\
+\hline
+{\em c} & Objeto \mbox{\hyperlink{class_competicao}{Competicao}} a ser construído com os dados da leitura \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna a stream de input i 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Fisica1/\+Desktop/\+A\+E\+D\+A/\+Trabalho/\+Trabalho\+A\+E\+D\+A\+Parte1/competicao.\+h\item 
+C\+:/\+Users/\+Fisica1/\+Desktop/\+A\+E\+D\+A/\+Trabalho/\+Trabalho\+A\+E\+D\+A\+Parte1/competicao.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,6 @@
+200m Individuais Masculino;individual;Eliminatorias,17/08/2020;Meias Finais,18/08/2020;Final,19/08/2020;;288888475;111111111;
+400m Individuais Masculino;individual;Eliminatorias,17/08/2020,18/08/2020;Final,19/08/2020;;288888475;
+200m Individuais Feminino;individual;Eliminatorias,17/08/2020;Meias Finais,18/08/2020;Final,19/08/2020;;228558475;
+400m Individuais Feminino;individual;Eliminatorias,18/08/2020;Final,19/08/2020;;228558475;
+800m Estilos Livres Feminino;individual;Eliminatorias,18/08/2020;Final,19/08/2020;;228558479;
+10km Aguas Abertas Feminino;individual;Final,19/08/2020;;373746666;
