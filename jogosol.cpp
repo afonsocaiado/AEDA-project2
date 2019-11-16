@@ -59,7 +59,7 @@ void Jogosol::readFuncionarios()
 {
     ifstream file;
 
-    file.open(R"(C:\Users\Fisica1\Desktop\AEDA\Trabalho\TrabalhoAEDAParte1\Trabalho-AEDA-2\funcionarios.txt)", ios::in);
+    file.open("funcionarios.txt", ios::in);
 
     while(!file.eof())
     {
@@ -75,7 +75,7 @@ void Jogosol::readAtletas()
 {
     ifstream file;
 
-    file.open(R"(C:\Users\Fisica1\Desktop\AEDA\Trabalho\TrabalhoAEDAParte1\Trabalho-AEDA-2\atletas.txt)", ios::in);
+    file.open("atletas.txt", ios::in);
 
     while(!file.eof())
     {
@@ -89,7 +89,7 @@ void Jogosol::readMedalhas()
 {
     ifstream file;
 
-    file.open(R"(C:\Users\Fisica1\Desktop\AEDA\Trabalho\TrabalhoAEDAParte1\Trabalho-AEDA-2\medalhas.txt)", ios::in);
+    file.open("medalhas.txt", ios::in);
     string pais,news;
     int ouro,prata,bronze;
     while(getline(file,news))
@@ -108,7 +108,7 @@ bool Jogosol::addFuncionario()
 {
     ofstream file;
 
-    file.open(R"(C:\Users\Fisica1\Desktop\AEDA\Trabalho\TrabalhoAEDAParte1\Trabalho-AEDA-2\funcionarios.txt)", ios::app);
+    file.open("funcionarios.txt", ios::app);
 
     string nome, funcao, modalidade;
     char sexo;

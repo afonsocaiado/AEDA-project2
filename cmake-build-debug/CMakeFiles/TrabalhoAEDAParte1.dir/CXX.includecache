@@ -18,12 +18,6 @@ iostream
 util.h
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/util.h
 
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/funcionario.cpp
-funcionario.h
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/funcionario.h
-iostream
--
-
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/funcionario.h
 iostream
 -
@@ -54,36 +48,6 @@ map
 funcionario.h
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/funcionario.h
 
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/main.cpp
-iostream
--
-jogosol.h
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/jogosol.h
-menu.h
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/menu.h
-
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/menu.cpp
-menu.h
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/menu.h
-jogosol.h
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/jogosol.h
-modalidade.h
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/modalidade.h
-iostream
--
-iomanip
--
-climits
--
-
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/menu.h
-iostream
--
-sstream
--
-jogosol.h
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/jogosol.h
-
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/modalidade.cpp
 modalidade.h
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/modalidade.h
@@ -94,16 +58,6 @@ C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/modali
 resultado.h
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/resultado.h
 vector
--
-
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/prova.cpp
-prova.h
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/prova.h
-funcionario.h
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/funcionario.h
-vector
--
-string
 -
 
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/prova.h
