@@ -1582,7 +1582,7 @@ void Menu::programacaoDiaria() {
     cout << "|   2 - Dias Anteriores                 |" << endl;
     cout << "|   3 - Voltar                          |" << endl;
     cout << "|_______________________________________|" << endl;
-
+    
     int choice;
     cout << endl << "  Enter your choice: ";
     cin >> choice;
@@ -1593,16 +1593,32 @@ void Menu::programacaoDiaria() {
         cin.ignore(INT_MAX, '\n');
         programacaoDiaria();
     }
-
+    
     switch (choice) {
-        case 1:
+        case 1: {
             //Programacao Diaria
+            string s;
+            Data d, tst;
+            stringstream ss;
+            cout << "Introduza a data do dia: ";
+            cin >> s;
+            s += ';';
+            ss << s;
+            ss >> d;
+            
+            if (d == tst) { //verifica que foi atribuida uma data a d
+                cout << "Data incorreta" << endl;
+                programacaoDiaria();
+            } else {
+                programacaoHoje(d);
+            }
+            
+            
             continuar();
             int choice1;
             cout << endl << "  Enter your choice: ";
             cin >> choice1;
-            if (!cin.good())
-            {
+            if (!cin.good()) {
                 cout << "Por favor introduza um valor valido";
                 cin.clear();
                 cin.ignore(INT_MAX, '\n');
@@ -1622,9 +1638,28 @@ void Menu::programacaoDiaria() {
                     programacaoDiaria();
             }
             break;
-        case 2:
-            diasAnteriores();
+        }
+        case 2: {
+            Data d, tst;
+            string s;
+            stringstream ss;
+            
+            
+            cout << "Introduza o dia de hoje: ";
+            cin >> s;
+            s += ';';
+            ss << s;
+            ss >> d;
+            
+            if (d == tst) {
+                cout << "Data invalida" << endl;
+                programacaoDiaria();
+            } else {
+                diasAnteriores(d);
+                
+            }
             break;
+        }
         case 3:
             mainMenu();
             break;
@@ -1634,8 +1669,35 @@ void Menu::programacaoDiaria() {
     }
 }
 
-void Menu::diasAnteriores() {
-    //Lista com dias passados, nao sei, e dificil
+void Menu::diasAnteriores(Data d) {
+    for (auto i:Jogosol::getModalidades()){
+        for(auto j: i->competicoes){
+            for(auto k: j.getProvas()){
+                
+                Data data_prova = k->getData();
+                if(d>data_prova){
+                    cout << endl << k->getNome();
+                }
+            }
+        }
+    }
+    
+}
+
+//--------------------------------------------------------------------------
+
+void Menu::programacaoHoje(Data d){
+    for (auto i:Jogosol::getModalidades()){
+        for(auto j: i->competicoes){
+            for(auto k: j.getProvas()){
+                
+                Data data_prova = k->getData();
+                if(d==data_prova){
+                    cout << endl << k->getNome();
+                }
+            }
+        }
+    }
 }
 
 //--------------------------------------------------------------------------
