@@ -1,11 +1,7 @@
 var searchData=
 [
-  ['setano_125',['setAno',['../class_data.html#a73cc858b0c78d41f3d8c4b131940ddd0',1,'Data']]],
-  ['setclassificacao_126',['setClassificacao',['../class_resultado.html#a7c5a9dd4173a3c5562ce1b385f4774d4',1,'Resultado']]],
-  ['setdata_127',['setData',['../class_prova.html#ac4e5e7a396b4bf6cb6d0c9a05ce4591f',1,'Prova']]],
-  ['setdia_128',['setDia',['../class_data.html#a5ded987b9aea91ca497ecc1376e3ec28',1,'Data']]],
-  ['setmedalhados_129',['setMedalhados',['../class_competicao.html#a45166003f679b9d9678ef4206ecea5cc',1,'Competicao']]],
-  ['setmes_130',['setMes',['../class_data.html#ac95a854d0ce9c336d4fb2831ee569354',1,'Data']]],
-  ['setpassou_131',['setPassou',['../class_resultado.html#a46b299320935a6aa7b640e5e010f8a5f',1,'Resultado']]],
-  ['setprova_132',['setProva',['../class_resultado.html#a839b5e83d359b5c49b222124c9090381',1,'Resultado']]]
+  ['readatletas_168',['readAtletas',['../class_jogosol.html#ac83ea2c12c210b1b82de275221135656',1,'Jogosol']]],
+  ['readfuncionarios_169',['readFuncionarios',['../class_jogosol.html#ac473a2bcc90475bfdf52b834d80f0e6c',1,'Jogosol']]],
+  ['readmedalhas_170',['readMedalhas',['../class_jogosol.html#afea125555b9aaff2a2b34918c75e249e',1,'Jogosol']]],
+  ['resultado_171',['Resultado',['../class_resultado.html#a19f1462f174b83e47de8fe0b8a7e88a1',1,'Resultado::Resultado()'],['../class_resultado.html#a5d4e0ec48fb109b6f923db63ce7e30d3',1,'Resultado::Resultado(Competicao competicao, Prova prova, int classificacao, bool passou)']]]
 ];

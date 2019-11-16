@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['jogosol_33',['Jogosol',['../class_jogosol.html',1,'Jogosol'],['../class_jogosol.html#a4ff4e04fa34cc16bc3d64a3fde250382',1,'Jogosol::Jogosol()']]]
+  ['input_46',['input',['../class_funcionario.html#a94db829f414cb4bd6077ec3b9932bac2',1,'Funcionario::input()'],['../class_atleta.html#a1888b9f719317803696c5c85f80504df',1,'Atleta::input()']]]
 ];

@@ -1,5 +1,4 @@
 "C:\Program Files\JetBrains\CLion 2019.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Fisica1\Desktop\AEDA\Trabalho\TrabalhoAEDAParte1\Trabalho-AEDA-2
--- Found Doxygen: C:/Program Files/doxygen/bin/doxygen.exe (found version "1.8.16 (cfd73d5c4d1a66c620a3b7c08b72a3f3c3f94255*)") found components:  doxygen missing components:  dot
 Doxygen build started
 -- Configuring done
 -- Generating done

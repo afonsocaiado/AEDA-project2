@@ -1,11 +1,8 @@
 var searchData=
 [
-  ['setano_56',['setAno',['../class_data.html#a73cc858b0c78d41f3d8c4b131940ddd0',1,'Data']]],
-  ['setclassificacao_57',['setClassificacao',['../class_resultado.html#a7c5a9dd4173a3c5562ce1b385f4774d4',1,'Resultado']]],
-  ['setdata_58',['setData',['../class_prova.html#ac4e5e7a396b4bf6cb6d0c9a05ce4591f',1,'Prova']]],
-  ['setdia_59',['setDia',['../class_data.html#a5ded987b9aea91ca497ecc1376e3ec28',1,'Data']]],
-  ['setmedalhados_60',['setMedalhados',['../class_competicao.html#a45166003f679b9d9678ef4206ecea5cc',1,'Competicao']]],
-  ['setmes_61',['setMes',['../class_data.html#ac95a854d0ce9c336d4fb2831ee569354',1,'Data']]],
-  ['setpassou_62',['setPassou',['../class_resultado.html#a46b299320935a6aa7b640e5e010f8a5f',1,'Resultado']]],
-  ['setprova_63',['setProva',['../class_resultado.html#a839b5e83d359b5c49b222124c9090381',1,'Resultado']]]
+  ['readme_202_67',['README 2',['../md__c_1__users__fisica1__desktop__a_e_d_a__trabalho__trabalho_a_e_d_a_parte1__trabalho-_a_e_d_a-2__r_e_a_d_m_e_2.html',1,'']]],
+  ['readatletas_68',['readAtletas',['../class_jogosol.html#ac83ea2c12c210b1b82de275221135656',1,'Jogosol']]],
+  ['readfuncionarios_69',['readFuncionarios',['../class_jogosol.html#ac473a2bcc90475bfdf52b834d80f0e6c',1,'Jogosol']]],
+  ['readmedalhas_70',['readMedalhas',['../class_jogosol.html#afea125555b9aaff2a2b34918c75e249e',1,'Jogosol']]],
+  ['resultado_71',['Resultado',['../class_resultado.html',1,'Resultado'],['../class_resultado.html#a19f1462f174b83e47de8fe0b8a7e88a1',1,'Resultado::Resultado()'],['../class_resultado.html#a5d4e0ec48fb109b6f923db63ce7e30d3',1,'Resultado::Resultado(Competicao competicao, Prova prova, int classificacao, bool passou)']]]
 ];

@@ -90,68 +90,65 @@ $(function() {
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">int</span> custoDiario;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_funcionario.html">Funcionario</a>();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_funcionario.html">Funcionario</a>(<span class="keywordtype">string</span> nome, <span class="keywordtype">char</span> sexo, <a class="code" href="class_data.html">Data</a> dataNascimento, <span class="keywordtype">int</span> passaporte, <span class="keywordtype">string</span> funcao, <a class="code" href="class_data.html">Data</a> dataChegada, <a class="code" href="class_data.html">Data</a> dataPartida, <span class="keywordtype">int</span> custoDiario);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_funcionario.html">Funcionario</a>();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_funcionario.html">Funcionario</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="class_funcionario.html">Funcionario</a>&amp;);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">string</span> getNome();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">string</span> getFuncao();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_data.html">Data</a> getDataNascimento();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_data.html">Data</a> getDataChegada();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="class_data.html">Data</a> getDataPartida();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">int</span> getPassaporte();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">int</span> getCustoDiario();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> setNome(<span class="keywordtype">string</span> nome);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> setFuncao(<span class="keywordtype">string</span> funcao);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> setDataChegada(<a class="code" href="class_data.html">Data</a> dataChegada);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> setDataPartida(<a class="code" href="class_data.html">Data</a> dataPartida);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> setDataNascimento(<a class="code" href="class_data.html">Data</a> nascimento);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> setPassaporte(<span class="keywordtype">int</span> pass);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> viewInfo();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">bool</span> operator== (<a class="code" href="class_funcionario.html">Funcionario</a> funcionario);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">friend</span> ostream &amp;operator&lt;&lt;(ostream &amp; o, <span class="keyword">const</span> <a class="code" href="class_funcionario.html">Funcionario</a> &amp;f);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> istream&amp; input(istream&amp; i);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_atleta.html">   51</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_atleta.html">Atleta</a>:<span class="keyword">public</span> <a class="code" href="class_funcionario.html">Funcionario</a>{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">string</span> modalidade;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">int</span> peso;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">int</span> altura;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">int</span> ranking;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    vector&lt;Competicao&gt; competicoes;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    vector&lt;Resultado&gt; resultados;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="class_atleta.html">Atleta</a>();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="class_atleta.html">Atleta</a>(<span class="keywordtype">string</span> nome, <span class="keywordtype">char</span> sexo, <a class="code" href="class_data.html">Data</a> dataNascimento, <span class="keywordtype">int</span> passaporte, <span class="keywordtype">string</span> funcao, <a class="code" href="class_data.html">Data</a> dataChegada, <a class="code" href="class_data.html">Data</a> dataPartida, <span class="keywordtype">int</span> custoDiario, <span class="keywordtype">string</span> modalidade, <span class="keywordtype">int</span> peso, <span class="keywordtype">int</span> altura, <span class="keywordtype">int</span> ranking);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    ~<a class="code" href="class_atleta.html">Atleta</a>();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    vector&lt;Resultado&gt; getResultados();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> addCompeticao(<a class="code" href="class_competicao.html">Competicao</a> competicao);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> addResultado(<a class="code" href="class_resultado.html">Resultado</a> resultado);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> viewInfo();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> viewResultados();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> elimAtleta();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> setPeso(<span class="keywordtype">int</span> novo);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> setAltura(<span class="keywordtype">int</span> novo);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> setRanking(<span class="keywordtype">int</span> novo);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">int</span> getRanking();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">int</span> getAltura();</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">int</span> getPeso();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">bool</span> operator== (<a class="code" href="class_atleta.html">Atleta</a> atleta);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">friend</span> ostream &amp;operator&lt;&lt;(ostream &amp; o, <span class="keyword">const</span> <a class="code" href="class_atleta.html">Atleta</a> &amp;a);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">virtual</span> istream&amp; input(istream&amp; i);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif //TRABALHOAEDAPARTE1_FUNCIONARIO_H</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_funcionario.html">Funcionario</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_funcionario.html">Funcionario</a>(<span class="keywordtype">string</span> nome, <span class="keywordtype">char</span> sexo, <a class="code" href="class_data.html">Data</a> dataNascimento, <span class="keywordtype">int</span> passaporte, <span class="keywordtype">string</span> funcao, <a class="code" href="class_data.html">Data</a> dataChegada, <a class="code" href="class_data.html">Data</a> dataPartida, <span class="keywordtype">int</span> custoDiario);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_funcionario.html">Funcionario</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_funcionario.html">Funcionario</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="class_funcionario.html">Funcionario</a>&amp;);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">string</span> getNome();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">string</span> getFuncao();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="class_data.html">Data</a> getDataNascimento();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="class_data.html">Data</a> getDataChegada();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="class_data.html">Data</a> getDataPartida();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">int</span> getPassaporte();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">int</span> getCustoDiario();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> setNome(<span class="keywordtype">string</span> nome);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> setFuncao(<span class="keywordtype">string</span> funcao);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> setDataChegada(<a class="code" href="class_data.html">Data</a> dataChegada);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> setDataPartida(<a class="code" href="class_data.html">Data</a> dataPartida);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> setDataNascimento(<a class="code" href="class_data.html">Data</a> nascimento);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> setPassaporte(<span class="keywordtype">int</span> pass);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> viewInfo();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">bool</span> operator== (<a class="code" href="class_funcionario.html">Funcionario</a> funcionario);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keyword">friend</span> ostream &amp;operator&lt;&lt;(ostream &amp; o, <span class="keyword">const</span> <a class="code" href="class_funcionario.html">Funcionario</a> &amp;f);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keyword">virtual</span> istream&amp; input(istream&amp; i);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;};</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="class_atleta.html">  118</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_atleta.html">Atleta</a>:<span class="keyword">public</span> <a class="code" href="class_funcionario.html">Funcionario</a>{</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">string</span> modalidade;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">int</span> peso;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">int</span> altura;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">int</span> ranking;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    vector&lt;Competicao&gt; competicoes;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    vector&lt;Resultado&gt; resultados;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="class_atleta.html">Atleta</a>();</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <a class="code" href="class_atleta.html">Atleta</a>(<span class="keywordtype">string</span> nome, <span class="keywordtype">char</span> sexo, <a class="code" href="class_data.html">Data</a> dataNascimento, <span class="keywordtype">int</span> passaporte, <span class="keywordtype">string</span> funcao, <a class="code" href="class_data.html">Data</a> dataChegada, <a class="code" href="class_data.html">Data</a> dataPartida, <span class="keywordtype">int</span> custoDiario, <span class="keywordtype">string</span> modalidade, <span class="keywordtype">int</span> peso, <span class="keywordtype">int</span> altura, <span class="keywordtype">int</span> ranking);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    ~<a class="code" href="class_atleta.html">Atleta</a>();</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    vector&lt;Resultado&gt; getResultados();</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordtype">void</span> addCompeticao(<a class="code" href="class_competicao.html">Competicao</a> competicao);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">void</span> addResultado(<a class="code" href="class_resultado.html">Resultado</a> resultado);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordtype">void</span> viewInfo();</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordtype">void</span> viewResultados();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordtype">void</span> elimAtleta();</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordtype">void</span> setPeso(<span class="keywordtype">int</span> novo);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordtype">void</span> setAltura(<span class="keywordtype">int</span> novo);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordtype">void</span> setRanking(<span class="keywordtype">int</span> novo);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keywordtype">int</span> getRanking();</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordtype">int</span> getAltura();</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordtype">int</span> getPeso();</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordtype">bool</span> operator== (<a class="code" href="class_atleta.html">Atleta</a> atleta);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keyword">friend</span> ostream &amp;operator&lt;&lt;(ostream &amp; o, <span class="keyword">const</span> <a class="code" href="class_atleta.html">Atleta</a> &amp;a);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keyword">virtual</span> istream&amp; input(istream&amp; i);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;};</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="preprocessor">#endif //TRABALHOAEDAPARTE1_FUNCIONARIO_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclass_funcionario_html"><div class="ttname"><a href="class_funcionario.html">Funcionario</a></div><div class="ttdef"><b>Definition:</b> funcionario.h:14</div></div>
 <div class="ttc" id="aclass_resultado_html"><div class="ttname"><a href="class_resultado.html">Resultado</a></div><div class="ttdef"><b>Definition:</b> resultado.h:15</div></div>
 <div class="ttc" id="aclass_data_html"><div class="ttname"><a href="class_data.html">Data</a></div><div class="ttdef"><b>Definition:</b> data.h:13</div></div>
 <div class="ttc" id="aclass_competicao_html"><div class="ttname"><a href="class_competicao.html">Competicao</a></div><div class="ttdef"><b>Definition:</b> competicao.h:14</div></div>
-<div class="ttc" id="aclass_atleta_html"><div class="ttname"><a href="class_atleta.html">Atleta</a></div><div class="ttdef"><b>Definition:</b> funcionario.h:51</div></div>
+<div class="ttc" id="aclass_atleta_html"><div class="ttname"><a href="class_atleta.html">Atleta</a></div><div class="ttdef"><b>Definition:</b> funcionario.h:118</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
