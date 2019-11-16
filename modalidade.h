@@ -21,6 +21,9 @@ public:
     /// Vetor de competições da modalidade
     /// Permite guardar as competições de cada modalidade
     vector <Competicao> competicoes;
+    /// Método get do nome.
+    ///
+    /// @return Retorna o nome da modalidade
      string getNome();
 };
 

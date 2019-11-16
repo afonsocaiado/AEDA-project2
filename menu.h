@@ -70,18 +70,18 @@ public:
     /// Programação diária.
     /// Apresenta a programação diária
     void programacaoDiaria();
+    /// Programação de hoje.
+    /// Apresenta a programação de hoje
     void programacaoHoje(Data d);
     ///  Menu de programação de dias anteriores.
     /// Apresenta a programação de dias anteriores
-    void diasAnteriores();
+    void diasAnteriores(Data d);
     /// Menu tabela de medalhados.
     /// Apresenta os países e as medalhas respetivas, seguindo a ordenação escolhida pelo utilizador
     void tabelaDeMedalhados();
     /// Menu genérico.
     /// Menu a ser apresentado em diversas siuações com escolhas diversas
     static void continuar();
-
-    void diasAnteriores(Data d);
 };
 
 

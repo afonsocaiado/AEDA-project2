@@ -1673,10 +1673,9 @@ void Menu::diasAnteriores(Data d) {
     for (auto i:Jogosol::getModalidades()){
         for(auto j: i->competicoes){
             for(auto k: j.getProvas()){
-                
                 Data data_prova = k->getData();
                 if(d>data_prova){
-                    cout << endl << k->getNome();
+                    cout << endl << data_prova << " " << i->getNome() << ", " << j.getNome() << ", " << k->getNome();
                 }
             }
         }
