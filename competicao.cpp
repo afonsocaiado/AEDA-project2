@@ -56,7 +56,7 @@ istream &operator>>(istream & i, Competicao &c)
     {
         getline(i, nome, ',');
         i >> dtemp;
-        Prova* p = new Prova(temp);
+        Prova* p = new Prova(nome);
         p->setData(dtemp);
         c.provas.push_back(p);
     }

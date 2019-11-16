@@ -69,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573919449054</updated>
-      <workItem from="1573919450327" duration="6013000" />
+      <workItem from="1573919450327" duration="6891000" />
     </task>
     <servers />
   </component>
@@ -96,9 +96,9 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/jogosol.cpp</url>
-          <line>14</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/menu.cpp</url>
+          <line>1687</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

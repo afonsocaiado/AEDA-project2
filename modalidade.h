@@ -21,6 +21,7 @@ public:
     /// Vetor de competições da modalidade
     /// Permite guardar as competições de cada modalidade
     vector <Competicao> competicoes;
+     string getNome();
 };
 
 #endif //TRABALHOAEDAPARTE1_MODALIDADE_H

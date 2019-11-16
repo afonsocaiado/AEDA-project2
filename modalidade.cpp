@@ -25,3 +25,8 @@ Modalidade::Modalidade(string nome)
    }
 
 }
+
+string Modalidade::getNome()
+{
+    return nome;
+}

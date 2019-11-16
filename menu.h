@@ -70,6 +70,7 @@ public:
     /// Programação diária.
     /// Apresenta a programação diária
     void programacaoDiaria();
+    void programacaoHoje(Data d);
     ///  Menu de programação de dias anteriores.
     /// Apresenta a programação de dias anteriores
     void diasAnteriores();
@@ -79,6 +80,8 @@ public:
     /// Menu genérico.
     /// Menu a ser apresentado em diversas siuações com escolhas diversas
     static void continuar();
+
+    void diasAnteriores(Data d);
 };
 
 

@@ -1693,7 +1693,7 @@ void Menu::programacaoHoje(Data d){
                 
                 Data data_prova = k->getData();
                 if(d==data_prova){
-                    cout << endl << k->getNome();
+                    cout << endl << i->getNome() << ", " << j.getNome() << ", " << k->getNome();
                 }
             }
         }
