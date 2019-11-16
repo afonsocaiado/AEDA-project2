@@ -2,6 +2,8 @@
 #ifndef TRABALHOAEDAPARTE1_JOGOSOL_H
 #define TRABALHOAEDAPARTE1_JOGOSOL_H
 
+/// @file Ficheiro header da classe Jogosol
+
 #include <fstream>
 #include <vector>
 #include <string>
@@ -10,22 +12,41 @@
 #include "funcionario.h"
 
 using namespace std;
-
+/// Classe Jogosol.
+/// Permite representar objetos Jogos Olímpicos
 class Jogosol {
 private:
     static vector<Modalidade*> modalidades;
     static vector<Funcionario> funcionarios;
     static vector<Atleta> vatletas;
 public:
+    /// Construtor vazio de Jogosol.
     Jogosol();
     static map<string,vector<int>> medalhas;
+    /// Método get do vetor de Atletas de Jogosol.
+    /// Este vetor guarda os atletas portugueses dos Jogos Olímpicos
     static vector<Atleta> getVAtletas();
+    /// Método get do vetor de Funcionários de Jogosol.
+    /// Este vetor guarda os funcionários (não atletas) portugueses dos Jogos Olímpicos
     static vector<Funcionario> getFuncionarios();
+    /// Método get do vetor de apontadores para Modalidades de Jogosol.
+    /// Este vetor guarda as modalidade dos Jogos Olímpicos
     static vector<Modalidade*> getModalidades();
+    /// Leitura dos funcionários (não atletas) do ficheiro funcionarios.txt.
     void readFuncionarios();
+    /// Leitura dos atletas do ficheiro atletas.txt.
     void readAtletas();
+    /// Leitura dos medalhados do ficheiro medalhados.txt.
     void readMedalhas();
+    /// Adicionar funcionário.
+    /// Permite adicionar um funcionário ao vetor de funcionários de Jogosol
+    ///
+    /// @return Retorna o sucesso ou insucesso da operação
     static bool addFuncionario();
+    /// Eliminar funcionário.
+    /// Permite eliminar um funcionário do vetor de funcionários de Jogosol
+    ///
+    /// @return
     static bool deleteFuncionario();
 };
 
