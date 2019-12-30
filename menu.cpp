@@ -14,7 +14,10 @@ void Menu::mainMenu() {
     cout << "|   2 - Modalidades                     |" << endl;
     cout << "|   3 - Programacao Diaria              |" << endl;
     cout << "|   4 - Tabela de Medalhados            |" << endl;
-    cout << "|   5 - Exit Program                    |" << endl;
+    cout << "|   5 - Recordes                        |" << endl;
+    cout << "|   6 - Contratar Funcionarios          |" << endl;
+    cout << "|   7 - Aplicar Servicos                |" << endl;
+    cout << "|   8 - Exit Program                    |" << endl;
     cout << "|_______________________________________|" << endl;
 
 
@@ -68,6 +71,39 @@ void Menu::mainMenu() {
             tabelaDeMedalhados();
             break;
         case 5:
+            //Recordes
+            break;
+        case 6:
+            //Contratar
+            break;
+        case 7: {
+            listaAtletasEscolhe(); //Apresenta todos os atletas para o utilizador selecionar o pretendido
+
+            int choice1;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice1;
+
+            if (!cin.good())
+            {
+                cout << "Por favor introduza um valor valido";
+                cin.clear();
+                cin.ignore(INT_MAX, '\n');
+                atletas();
+            }
+
+            if (choice1 > Jogosol::getVAtletas().size()){
+                cout << "Por favor introduza um valor valido";
+                cin.clear();
+                cin.ignore(INT_MAX, '\n');
+                atletas();
+            }
+
+            Atleta atleta = Jogosol::getVAtletas().at(choice1 - 1);
+            //Ja tem aqui o atleta que quer fazer um serviço (que sera introduzido pelo utilizador?)
+            //A seguir e so fazer o ponto 2 do enunciado
+            break;
+        }
+        case 8:
             return;
         default:
             cout << endl << "Por favor escolha uma opção correta" << endl;
@@ -156,7 +192,7 @@ void Menu::atletas() {
     
     switch (choice) {
         case 1: {
-            listaAtletasEscolhe();
+            listaAtletasEscolhe(); //Apresenta todos os atletas para o utilizador selecionar o pretendido
 
             int choice1;
             cout << endl << "  Enter your choice: ";
