@@ -69,6 +69,11 @@ CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.obj: ../prova.h
 CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.obj: ../resultado.h
 CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.obj: ../util.h
 
+CMakeFiles/TrabalhoAEDAParte1.dir/recorde.cpp.obj: ../data.h
+CMakeFiles/TrabalhoAEDAParte1.dir/recorde.cpp.obj: ../recorde.cpp
+CMakeFiles/TrabalhoAEDAParte1.dir/recorde.cpp.obj: ../recorde.h
+CMakeFiles/TrabalhoAEDAParte1.dir/recorde.cpp.obj: ../util.h
+
 CMakeFiles/TrabalhoAEDAParte1.dir/resultado.cpp.obj: ../competicao.h
 CMakeFiles/TrabalhoAEDAParte1.dir/resultado.cpp.obj: ../data.h
 CMakeFiles/TrabalhoAEDAParte1.dir/resultado.cpp.obj: ../prova.h
