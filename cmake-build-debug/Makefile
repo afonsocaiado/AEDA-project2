@@ -351,6 +351,33 @@ prova.cpp.s:
 	$(MAKE) -f CMakeFiles\TrabalhoAEDAParte1.dir\build.make CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.s
 .PHONY : prova.cpp.s
 
+recorde.obj: recorde.cpp.obj
+
+.PHONY : recorde.obj
+
+# target to build an object file
+recorde.cpp.obj:
+	$(MAKE) -f CMakeFiles\TrabalhoAEDAParte1.dir\build.make CMakeFiles/TrabalhoAEDAParte1.dir/recorde.cpp.obj
+.PHONY : recorde.cpp.obj
+
+recorde.i: recorde.cpp.i
+
+.PHONY : recorde.i
+
+# target to preprocess a source file
+recorde.cpp.i:
+	$(MAKE) -f CMakeFiles\TrabalhoAEDAParte1.dir\build.make CMakeFiles/TrabalhoAEDAParte1.dir/recorde.cpp.i
+.PHONY : recorde.cpp.i
+
+recorde.s: recorde.cpp.s
+
+.PHONY : recorde.s
+
+# target to generate assembly for a file
+recorde.cpp.s:
+	$(MAKE) -f CMakeFiles\TrabalhoAEDAParte1.dir\build.make CMakeFiles/TrabalhoAEDAParte1.dir/recorde.cpp.s
+.PHONY : recorde.cpp.s
+
 resultado.obj: resultado.cpp.obj
 
 .PHONY : resultado.obj
@@ -439,6 +466,9 @@ help:
 	@echo ... prova.obj
 	@echo ... prova.i
 	@echo ... prova.s
+	@echo ... recorde.obj
+	@echo ... recorde.i
+	@echo ... recorde.s
 	@echo ... resultado.obj
 	@echo ... resultado.i
 	@echo ... resultado.s

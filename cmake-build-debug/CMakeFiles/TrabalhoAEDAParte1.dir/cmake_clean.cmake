@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/TrabalhoAEDAParte1.dir/menu.cpp.obj"
   "CMakeFiles/TrabalhoAEDAParte1.dir/modalidade.cpp.obj"
   "CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.obj"
+  "CMakeFiles/TrabalhoAEDAParte1.dir/recorde.cpp.obj"
   "CMakeFiles/TrabalhoAEDAParte1.dir/resultado.cpp.obj"
   "CMakeFiles/TrabalhoAEDAParte1.dir/util.cpp.obj"
   "TrabalhoAEDAParte1.exe"

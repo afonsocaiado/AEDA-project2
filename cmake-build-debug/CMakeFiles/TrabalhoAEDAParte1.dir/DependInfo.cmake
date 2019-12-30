@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/menu.cpp" "C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/cmake-build-debug/CMakeFiles/TrabalhoAEDAParte1.dir/menu.cpp.obj"
   "C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/modalidade.cpp" "C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/cmake-build-debug/CMakeFiles/TrabalhoAEDAParte1.dir/modalidade.cpp.obj"
   "C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/prova.cpp" "C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/cmake-build-debug/CMakeFiles/TrabalhoAEDAParte1.dir/prova.cpp.obj"
+  "C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/recorde.cpp" "C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/cmake-build-debug/CMakeFiles/TrabalhoAEDAParte1.dir/recorde.cpp.obj"
   "C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/resultado.cpp" "C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/cmake-build-debug/CMakeFiles/TrabalhoAEDAParte1.dir/resultado.cpp.obj"
   "C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/util.cpp" "C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/cmake-build-debug/CMakeFiles/TrabalhoAEDAParte1.dir/util.cpp.obj"
   )

@@ -90,6 +90,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/bst.h">
+			<Option target="TrabalhoAEDAParte1"/>
+		</Unit>
 		<Unit filename="C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/competicao.cpp">
 			<Option target="TrabalhoAEDAParte1"/>
 		</Unit>
@@ -133,6 +136,12 @@
 			<Option target="TrabalhoAEDAParte1"/>
 		</Unit>
 		<Unit filename="C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/prova.h">
+			<Option target="TrabalhoAEDAParte1"/>
+		</Unit>
+		<Unit filename="C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/recorde.cpp">
+			<Option target="TrabalhoAEDAParte1"/>
+		</Unit>
+		<Unit filename="C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/recorde.h">
 			<Option target="TrabalhoAEDAParte1"/>
 		</Unit>
 		<Unit filename="C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/resultado.cpp">
