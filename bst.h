@@ -36,7 +36,7 @@ class BST
 {
 public:
     explicit BST( const Comparable & notFound );
-    BST( const BST & rhs );
+    BST( const BST & rhs);
     ~BST( );
 
     const Comparable & findMin( ) const;

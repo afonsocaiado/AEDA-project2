@@ -6,6 +6,12 @@ using namespace std;
 
 Funcionario::Funcionario()= default;
 
+Funcionario::Funcionario(string servico, int indisp)
+{
+    this->servico = servico;
+    this->indisp = indisp;
+}
+
 Funcionario::Funcionario(string nome, char sexo, Data dataNascimento, int passaporte, string funcao, Data dataChegada, Data dataPartida, int custoDiario):nome(nome), sexo(sexo), dataNascimento(dataNascimento), passaporte(passaporte), funcao(funcao), custoDiario(custoDiario)
 {
 
@@ -54,6 +60,16 @@ Data Funcionario::getDataPartida()
 int Funcionario::getCustoDiario()
 {
     return custoDiario;
+}
+
+string Funcionario::getServico()
+{
+    return servico;
+}
+
+int Funcionario::getIndisp()
+{
+    return indisp;
 }
 
 void Funcionario::setDataChegada(Data dataChegada)
@@ -112,9 +128,30 @@ void Funcionario::setDataPartida(Data dataPartida)
     this->dataPartida = dataPartida;
 }
 
+void Funcionario::setIndisp(int indisp)
+{
+    this->indisp = indisp;
+}
+
 bool Funcionario::operator== ( Funcionario funcionario)
 {
     return this->passaporte == funcionario.passaporte;
+}
+
+bool Funcionario::operator< (const Funcionario f) const
+{
+    return this->indisp < f.indisp;
+}
+
+int Funcionario::operator() (const Funcionario & f) const
+{
+    //Nao sei
+    return 0;
+}
+
+bool Funcionario::operator() (const Funcionario & f1, const Funcionario & f2) const
+{
+    return f1.passaporte == f2.passaporte;
 }
 
 void Funcionario::viewInfo() {

@@ -2,6 +2,7 @@
 #define TRABALHOAEDAPARTE1_UTIL_H
 
 #include <string>
+#include "bst.h"
 
 using namespace std;
 /// Função para minúsculas.

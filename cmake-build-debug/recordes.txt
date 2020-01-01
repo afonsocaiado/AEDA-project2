@@ -1,0 +1,3 @@
+atletismo;100m;Zé Maçães;Seoul;14/12/2010;
+atletismo;Salto em Altura;Topê;Atlanta;17/10/2016;
+natacao;10km Aguas Abertas Feminino;Fernanda;Porto;01/01/2020;

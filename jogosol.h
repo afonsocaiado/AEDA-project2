@@ -19,6 +19,8 @@ private:
     static vector<Modalidade*> modalidades;
     static vector<Funcionario> funcionarios;
     static vector<Atleta> vatletas;
+    static BST<Recorde> recordes;
+    static priority_queue<Funcionario> fila;
 public:
     /// Construtor vazio de Jogosol.
     Jogosol();
@@ -32,12 +34,17 @@ public:
     /// Método get do vetor de apontadores para Modalidades de Jogosol.
     /// Este vetor guarda as modalidade dos Jogos Olímpicos
     static vector<Modalidade*> getModalidades();
+    /// Método get da BST de recordes
+    /// Está árvore binária de pesquisa guarda os recordes
+    static BST<Recorde> getRecordes();
     /// Leitura dos funcionários (não atletas) do ficheiro funcionarios.txt.
     void readFuncionarios();
     /// Leitura dos atletas do ficheiro atletas.txt.
     void readAtletas();
     /// Leitura dos medalhados do ficheiro medalhados.txt.
     void readMedalhas();
+    /// Leitura dos recordes do fiheiro recordes.txt
+    void readRecordes();
     /// Adicionar funcionário.
     /// Permite adicionar um funcionário ao vetor de funcionários de Jogosol
     ///

@@ -15,7 +15,7 @@ private:
 
 public:
     Recorde(Data data, string local, string atleta, string modalidade, string competicao);
-    bool operator<(Recorde& r);
+    bool operator<(const Recorde& r) const;
 };
 
 

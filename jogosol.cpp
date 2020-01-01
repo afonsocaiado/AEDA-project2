@@ -13,6 +13,8 @@ Jogosol::Jogosol()
 
     Jogosol::readMedalhas();
 
+    //Jogosol::readRecordes();
+
     Modalidade* atletismo = new Modalidade("atletismo");
     modalidades.push_back(atletismo);
     Modalidade* badminton = new Modalidade("badminton");
@@ -54,6 +56,8 @@ vector<Funcionario> Jogosol::funcionarios {};
 vector<Atleta> Jogosol::vatletas {};
 
 map<string,vector<int>> Jogosol::medalhas {};
+
+//BST<Recorde> Jogosol::recordes {};
 
 void Jogosol::readFuncionarios()
 {
@@ -103,7 +107,30 @@ void Jogosol::readMedalhas()
         medalhas.insert(pair<string,vector<int>> (pais,vint));
     }
 }
+/*
+void Jogosol::readRecordes(){
+    ifstream file;
 
+    file.open("recordes.txt", ios::in);
+    string local, atleta;
+    Data data;
+    string modalidade;
+    string competicao;
+    while(!file.eof())
+    {
+        getline(file, modalidade, ';');
+        getline(file, competicao, ';');
+        getline(file, atleta, ';');
+        getline(file, local, ';');
+        file >> data;
+        file.ignore();
+
+        Recorde r(data, local, atleta, modalidade, competicao);
+
+        recordes.insert(r);
+    }
+}
+*/
 bool Jogosol::addFuncionario()
 {
     ofstream file;
@@ -196,4 +223,9 @@ vector<Modalidade*> Jogosol::getModalidades()
 {
     return modalidades;
 }
-
+/*
+BST<Recorde> Jogosol::getRecordes()
+{
+    return recordes;
+}
+*/

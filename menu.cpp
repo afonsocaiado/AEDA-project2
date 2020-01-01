@@ -101,6 +101,8 @@ void Menu::mainMenu() {
             Atleta atleta = Jogosol::getVAtletas().at(choice1 - 1);
             //Ja tem aqui o atleta que quer fazer um serviço (que sera introduzido pelo utilizador?)
             //A seguir e so fazer o ponto 2 do enunciado
+
+
             break;
         }
         case 8:

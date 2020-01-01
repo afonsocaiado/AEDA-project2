@@ -4,7 +4,7 @@
 
 #include <string>
 
-#include "data.h"
+#include "recorde.h"
 
 
 class Prova {

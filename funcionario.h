@@ -22,10 +22,16 @@ protected:
     Data dataChegada;
     Data dataPartida;
     int custoDiario;
-
+    string servico;
+    int indisp;
 public:
     /// Construtor vazio do Funcionário.
     Funcionario();
+    /// Construtor do funcionario com servico e indispoinibilidade
+    ///
+    /// @param servico Servico específico do Funcionario
+    /// @param indisp Horas de indisponibilidade do Funcionario
+    Funcionario(string servico, int indisp);
     /// Construtor do Funcionário.
     ///
     /// @param nome Nome do funcionário
@@ -71,6 +77,14 @@ public:
     ///
     /// @return Retorna o custo diário do funcionário
     int getCustoDiario();
+    /// Método get do serviço do funcionario
+    ///
+    /// @return Retorna o serviço do funcionário
+    string getServico();
+    /// Método get da indisponibilidade do funcionário
+    ///
+    /// @return Retorna as horas de indisponibilidade do funcionário
+    int getIndisp();
     /// Método set do nome.
     ///
     /// @param nome Nome para o qual o nome deve ser alterado
@@ -91,6 +105,10 @@ public:
     ///
     /// @param nascimento Data para a qual a data deve ser alterada
     void setDataNascimento(Data nascimento);
+    /// Método set da indisponibilidade do funcionário
+    ///
+    /// @param indisp Horas de indisponibilidade do funcionário
+    void setIndisp(int indisp);
     /// Método set do número de passaporte.
     ///
     /// @param pass Número para o qual o número do passaporte deve ser alterado
@@ -102,6 +120,15 @@ public:
     /// @param funcionario Funcionário a comparar com o funcionário antes do operador
     /// @return Retorna true se os funcionários forem iguais
     bool operator== (Funcionario funcionario);
+    /// Operador de comparação de menor do funcionário
+    ///
+    /// @param f Funcionário a ser comparado
+    /// @return Retorna o funcionário com o menor número de horas de indisponibilidade
+    bool operator< (const Funcionario f) const;
+
+    int operator() (const Funcionario & f) const;
+
+    bool operator() (const Funcionario & f1, const Funcionario & f2) const;
     /// Operador de escrita do funcionário
     ///
     /// @param o Stream de output

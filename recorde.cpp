@@ -9,7 +9,7 @@ Recorde::Recorde(Data data, string local, string atleta, string modalidade, stri
     this->competicao = competicao;
 }
 
-bool Recorde::operator<(Recorde& r)
+bool Recorde::operator<(const Recorde& r) const
 {
     if (modalidade < r.modalidade)
         return true;
