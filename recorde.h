@@ -14,8 +14,10 @@ private:
     string competicao;
 
 public:
+    Recorde();
     Recorde(Data data, string local, string atleta, string modalidade, string competicao);
     bool operator<(const Recorde& r) const;
+    Recorde operator= (Recorde &r);
 };
 
 

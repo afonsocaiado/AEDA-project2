@@ -73,4 +73,5 @@ istream &operator>>(istream & i, Competicao &c)
 
     i.ignore(2, '\n');
 
+    return i;
 }

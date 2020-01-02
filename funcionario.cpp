@@ -145,8 +145,7 @@ bool Funcionario::operator< (const Funcionario f) const
 
 int Funcionario::operator() (const Funcionario & f) const
 {
-    //Nao sei
-    return 0;
+    return f.passaporte%7919;
 }
 
 bool Funcionario::operator() (const Funcionario & f1, const Funcionario & f2) const

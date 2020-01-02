@@ -8,6 +8,7 @@
 #include <vector>
 #include <string>
 #include <map>
+#include <unordered_set>
 
 #include "funcionario.h"
 
@@ -21,6 +22,7 @@ private:
     static vector<Atleta> vatletas;
     static BST<Recorde> recordes;
     static priority_queue<Funcionario> fila;
+    static unordered_set<Funcionario> tabela;
 public:
     /// Construtor vazio de Jogosol.
     Jogosol();
@@ -37,6 +39,12 @@ public:
     /// Método get da BST de recordes
     /// Está árvore binária de pesquisa guarda os recordes
     static BST<Recorde> getRecordes();
+    /// Método get da fila de prioridade dos funcionários
+    /// Nesta árvre os funcionários estão ordenados pela sua disponibilidade
+    static priority_queue<Funcionario> getFuncDisp();
+    /// Método get da tabela de dispersão
+    /// Esta tabela guarda todos os funcionários para permitir pesquisa mais rápida
+    static unordered_set<Funcionario> getTabela();
     /// Leitura dos funcionários (não atletas) do ficheiro funcionarios.txt.
     void readFuncionarios();
     /// Leitura dos atletas do ficheiro atletas.txt.

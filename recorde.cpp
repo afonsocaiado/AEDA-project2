@@ -1,5 +1,7 @@
 #include "recorde.h"
 
+Recorde::Recorde() = default;
+
 Recorde::Recorde(Data data, string local, string atleta, string modalidade, string competicao)
 {
     this->data = data;
@@ -25,4 +27,15 @@ bool Recorde::operator<(const Recorde& r) const
         else
             return false;
     }
+}
+
+Recorde Recorde::operator= (Recorde &r)
+{
+    this->competicao = r.competicao;
+    this->local = r.local;
+    this->data = r.data;
+    this->modalidade = r.modalidade;
+    this->atleta = r.atleta;
+
+    return *this;
 }
