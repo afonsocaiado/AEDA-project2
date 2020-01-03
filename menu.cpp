@@ -1871,9 +1871,8 @@ void Menu::editarRecMenu(){
 
     cout << endl << "_______________ RECORDES _______________" << endl << "|" << setw(40) << "|" << endl;
     cout << "|   1 - Acrescentar Recorde             |" << endl;
-    cout << "|   2 - Modificar Recorde               |" << endl;
-    cout << "|   3 - Eliminar Recorde                |" << endl;
-    cout << "|   4 - Voltar                          |" << endl;
+    cout << "|   2 - Eliminar Recorde                |" << endl;
+    cout << "|   3 - Voltar                          |" << endl;
     cout << "|_______________________________________|" << endl;
 
     int choice;
@@ -1918,12 +1917,9 @@ void Menu::editarRecMenu(){
             }
             break;
         case 2:
-            //Mod
-            break;
-        case 3:
             //Elim
             break;
-        case 4:
+        case 3:
             recordesMenu();
             break;
         default:

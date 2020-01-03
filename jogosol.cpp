@@ -57,7 +57,7 @@ vector<Atleta> Jogosol::vatletas {};
 
 map<string,vector<int>> Jogosol::medalhas {};
 
-Recorde recorde = Recorde();
+Recorde notFound = Recorde();
 
 BST<Recorde> Jogosol::recordes(recorde);
 
@@ -287,5 +287,12 @@ void Jogosol::addRecorde() {
     getline(cin, competicao);
 
     Recorde rec(dataRec, local, atleta, modalidade, competicao);
-    recordes.insert(rec);
+    Recorde r = recordes.find(rec);
+    if(r == notFound){
+        recordes.insert(rec);
+    } else {
+        recordes.remove(r);
+        recordes.insert(rec);
+    }
+
 }
