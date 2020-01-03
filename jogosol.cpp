@@ -59,7 +59,7 @@ map<string,vector<int>> Jogosol::medalhas {};
 
 Recorde notFound = Recorde();
 
-BST<Recorde> Jogosol::recordes(recorde);
+BST<Recorde> Jogosol::recordes(notFound);
 
 priority_queue<Funcionario> Jogosol::fila {};
 
