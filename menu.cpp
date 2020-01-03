@@ -1961,9 +1961,9 @@ void Menu::servicosMenu(Atleta &atleta) {
             {
                 cout << "Servico (Especifico/Normal)? ";
                 cin >> sel;
+                cin.ignore(100, '\n');
             }
 
-            cin.ignore(100, '\n');
 
             Funcionario f;
             int horas;

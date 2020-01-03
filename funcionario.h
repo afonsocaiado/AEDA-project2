@@ -73,7 +73,7 @@ public:
     /// Método get do número de passaporte.
     ///
     /// @return Retorna o número de passaporte do funcionário
-    int getPassaporte();
+    int getPassaporte() const;
     /// Método get do custo diário.
     ///
     /// @return Retorna o custo diário do funcionário
@@ -130,17 +130,6 @@ public:
     /// @param f Funcionário a ser comparado
     /// @return Retorna o funcionário com o menor número de horas de indisponibilidade
     bool operator< (const Funcionario f) const;
-    /// Operdador de funçao do funcionário (Função de hash)
-    ///
-    /// @param f Funcionário a inserir na tabela
-    /// @return Retorna o índice na tabela para inserir o funcionário
-    int operator() (const Funcionario & f) const;
-    /// Operador de função do funcionário (Operador de verificação de igualdade, para resolução de colisões)
-    ///
-    /// @param f1 Funcionário a comparar
-    /// @param f2 Funcionário a comparar
-    /// @return Retorna verdadeiro de forem iguais, falso se forem diferentes
-    bool operator() (const Funcionario & f1, const Funcionario & f2) const;
     /// Operador de escrita do funcionário
     ///
     /// @param o Stream de output

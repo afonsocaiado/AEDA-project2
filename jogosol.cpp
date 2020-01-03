@@ -63,7 +63,7 @@ BST<Recorde> Jogosol::recordes(recorde);
 
 priority_queue<Funcionario> Jogosol::fila {};
 
-//  unordered_set<Funcionario> Jogosol::tabela {};
+tabFunc Jogosol::tabela {};
 
 void Jogosol::readFuncionarios()
 {
@@ -76,6 +76,7 @@ void Jogosol::readFuncionarios()
         Funcionario f;
         f.input(file);
         funcionarios.push_back(f);
+        tabela.insert(f);
     }
 
     file.close();
@@ -259,12 +260,11 @@ priority_queue<Funcionario> Jogosol::getFuncDisp()
 {
     return fila;
 }
-/*
-unordered_set<Funcionario> Jogosol::getTabela()
+
+tabFunc Jogosol::getTabela()
 {
     return tabela;
 }
-*/
 
 void Jogosol::addRecorde() {
     Data dataRec;

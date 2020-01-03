@@ -114,7 +114,7 @@ void Funcionario::setPassaporte(int pass) {
     this->passaporte = pass;
 }
 
-int Funcionario::getPassaporte() {
+int Funcionario::getPassaporte() const{
     return passaporte;
 }
 
@@ -134,7 +134,7 @@ void Funcionario::addIndisp(int indisp){
 
 void Funcionario::subIndisp(int indisp)
 {
-    this->indisp += indisp;
+    this->indisp -= indisp;
 }
 
 bool Funcionario::operator== ( Funcionario funcionario)
@@ -145,16 +145,6 @@ bool Funcionario::operator== ( Funcionario funcionario)
 bool Funcionario::operator< (const Funcionario f) const
 {
     return this->indisp < f.indisp;
-}
-
-int Funcionario::operator() (const Funcionario & f) const
-{
-    return f.passaporte%7919;
-}
-
-bool Funcionario::operator() (const Funcionario & f1, const Funcionario & f2) const
-{
-    return f1.passaporte == f2.passaporte;
 }
 
 void Funcionario::viewInfo() {

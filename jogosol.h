@@ -12,6 +12,21 @@
 
 #include "funcionario.h"
 
+struct funcHash
+{
+    int operator() (const Funcionario & f) const
+    {
+        return f.getPassaporte()%7919;
+    }
+
+    bool operator() (const Funcionario & f1, const Funcionario & f2) const
+    {
+        return f1.getPassaporte() == f2.getPassaporte();
+    }
+};
+
+typedef unordered_set<Funcionario, funcHash, funcHash> tabFunc;
+
 using namespace std;
 /// Classe Jogosol.
 /// Permite representar objetos Jogos Olímpicos
@@ -22,7 +37,7 @@ private:
     static vector<Atleta> vatletas;
     static BST<Recorde> recordes;
     static priority_queue<Funcionario> fila;
-    static unordered_set<Funcionario> tabela;
+    static tabFunc tabela;
 public:
     /// Construtor vazio de Jogosol.
     Jogosol();
@@ -44,7 +59,7 @@ public:
     static priority_queue<Funcionario> getFuncDisp();
     /// Método get da tabela de dispersão
     /// Esta tabela guarda todos os funcionários para permitir pesquisa mais rápida
-    static unordered_set<Funcionario> getTabela();
+    static tabFunc getTabela();
     /// Leitura dos funcionários (não atletas) do ficheiro funcionarios.txt.
     void readFuncionarios();
     /// Leitura da indisponibilidade dos funcionarios do ficheiro funcionariosserind.txt
