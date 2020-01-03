@@ -39,3 +39,11 @@ Recorde Recorde::operator= (Recorde &r)
 
     return *this;
 }
+
+bool Recorde::operator== (const Recorde &r) const
+{
+    if(this->modalidade == r.modalidade && this->competicao == r.competicao){
+        return true;
+    }
+    return false;
+}
