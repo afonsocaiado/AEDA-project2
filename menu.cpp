@@ -1907,7 +1907,7 @@ void Menu::editarRecMenu(){
                     editarRecMenu();
                     break;
                 case 2:
-                    recordesMenu();
+                    mainMenu();
                     break;
                 case 3:
                     return;
@@ -1990,7 +1990,31 @@ void Menu::servicosMenu(Atleta &atleta) {
 
                         Jogosol::getFuncDisp().push(f);
                         encontrou = true;
-                        //aqui
+                        continuar();
+                        int choice1;
+                        cout << endl << "  Enter your choice: ";
+                        cin >> choice1;
+                        if (!cin.good())
+                        {
+                            cout << "Por favor introduza um valor valido";
+                            cin.clear();
+                            cin.ignore(INT_MAX, '\n');
+                            editarAtleta();
+                        }
+
+                        switch (choice1) {
+                            case 1:
+                                servicosMenu(atleta);
+                                break;
+                            case 2:
+                                mainMenu();
+                                break;
+                            case 3:
+                                return;
+                            default:
+                                cout << "Por favor introduza um valor valido" << endl;
+                                servicosMenu(atleta);
+                        }
                     }
 
 
@@ -2009,16 +2033,65 @@ void Menu::servicosMenu(Atleta &atleta) {
                 if (encontrou == true)
                 {
                     cout << "Funcionario atribuido: " << f.getNome() << endl;
-                    // aqui
+
+                    continuar();
+                    int choice1;
+                    cout << endl << "  Enter your choice: ";
+                    cin >> choice1;
+                    if (!cin.good())
+                    {
+                        cout << "Por favor introduza um valor valido";
+                        cin.clear();
+                        cin.ignore(INT_MAX, '\n');
+                        editarAtleta();
+                    }
+
+                    switch (choice1) {
+                        case 1:
+                            servicosMenu(atleta);
+                            break;
+                        case 2:
+                            mainMenu();
+                            break;
+                        case 3:
+                            return;
+                        default:
+                            cout << "Por favor introduza um valor valido" << endl;
+                            editarRecMenu();
+                    }
                 }
 
                 else
                 {
                     cout << "Nenhum funcionario pode realizar esse servico" << endl;
-                    //aqui
+
+                    continuar();
+                    int choice1;
+                    cout << endl << "  Enter your choice: ";
+                    cin >> choice1;
+                    if (!cin.good())
+                    {
+                        cout << "Por favor introduza um valor valido";
+                        cin.clear();
+                        cin.ignore(INT_MAX, '\n');
+                        editarAtleta();
+                    }
+
+                    switch (choice1) {
+                        case 1:
+                            servicosMenu(atleta);
+                            break;
+                        case 2:
+                            mainMenu();
+                            break;
+                        case 3:
+                            return;
+                        default:
+                            cout << "Por favor introduza um valor valido" << endl;
+                            servicosMenu(atleta);
+                    }
                 }
             }
-
             else
             {
                 cout << "Horas gastas: ";
