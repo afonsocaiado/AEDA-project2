@@ -6,8 +6,9 @@ using namespace std;
 
 Funcionario::Funcionario()= default;
 
-Funcionario::Funcionario(string servico, int indisp)
+Funcionario::Funcionario(string nome, string servico, int indisp)
 {
+    this->nome = nome;
     this->servico = servico;
     this->indisp = indisp;
 }
@@ -62,8 +63,7 @@ int Funcionario::getCustoDiario()
     return custoDiario;
 }
 
-string Funcionario::getServico()
-{
+string Funcionario::getServico() const {
     return servico;
 }
 
@@ -128,9 +128,13 @@ void Funcionario::setDataPartida(Data dataPartida)
     this->dataPartida = dataPartida;
 }
 
-void Funcionario::setIndisp(int indisp)
+void Funcionario::addIndisp(int indisp){
+    this->indisp += indisp;
+}
+
+void Funcionario::subIndisp(int indisp)
 {
-    this->indisp = indisp;
+    this->indisp += indisp;
 }
 
 bool Funcionario::operator== ( Funcionario funcionario)

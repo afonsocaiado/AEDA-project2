@@ -29,9 +29,10 @@ public:
     Funcionario();
     /// Construtor do funcionario com servico e indispoinibilidade
     ///
+    /// @param nome Nome do funcionário
     /// @param servico Servico específico do Funcionario
     /// @param indisp Horas de indisponibilidade do Funcionario
-    Funcionario(string servico, int indisp);
+    Funcionario(string nome, string servico, int indisp);
     /// Construtor do Funcionário.
     ///
     /// @param nome Nome do funcionário
@@ -80,7 +81,7 @@ public:
     /// Método get do serviço do funcionario
     ///
     /// @return Retorna o serviço do funcionário
-    string getServico();
+    string getServico() const;
     /// Método get da indisponibilidade do funcionário
     ///
     /// @return Retorna as horas de indisponibilidade do funcionário
@@ -105,10 +106,14 @@ public:
     ///
     /// @param nascimento Data para a qual a data deve ser alterada
     void setDataNascimento(Data nascimento);
-    /// Método set da indisponibilidade do funcionário
+    /// Método para incrementar a indisponibilidade do funcionário
     ///
-    /// @param indisp Horas de indisponibilidade do funcionário
-    void setIndisp(int indisp);
+    /// @param indisp Horas a incrementar na indisponibilidade do funcionário
+    void addIndisp(int indisp);
+    /// Método para decrementar a indisponibilidade do funcionário
+    ///
+    /// @param indisp Horas a decrementar na indisponibilidade do funcionário
+    void subIndisp(int indisp);
     /// Método set do número de passaporte.
     ///
     /// @param pass Número para o qual o número do passaporte deve ser alterado

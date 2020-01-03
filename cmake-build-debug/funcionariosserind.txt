@@ -1,5 +1,5 @@
-Miguel Pinto; treino; 15;
-Fernando Santos; treino; 32;
-Muriel Pinto; hidratar; 0;
-Ze Macaes; reuniao; 10;
-Ze; massagem; 2;
+Miguel Pinto;treino;15;
+Fernando Santos;treino;32;
+Muriel Pinto;hidratar;0;
+Ze Macaes;reuniao;10;
+Ze;massagem;2;

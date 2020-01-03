@@ -101,6 +101,91 @@ void Menu::mainMenu() {
             Atleta atleta = Jogosol::getVAtletas().at(choice1 - 1);
             //Ja tem aqui o atleta que quer fazer um serviço (que sera introduzido pelo utilizador?)
             //A seguir e so fazer o ponto 2 do enunciado
+            char sel;
+
+            while (sel != 'E' && sel != 'e' && sel != 'n' && sel != 'N')
+            {
+                cout << "Servico (Especifico/Normal)? ";
+                cin >> sel;
+            }
+
+            cin.ignore(100, '\n');
+
+            Funcionario f;
+            int horas;
+
+            if (sel == 'E' && sel == 'e')
+            {
+                string servico;
+
+                cout << "Servico a realizar: ";
+                getline(cin, servico);
+                cin.ignore();
+
+                vector<Funcionario> temp;
+
+                bool encontrou = false;
+
+                int tamanho = Jogosol::getFuncDisp().size();
+
+                for (unsigned i = 0; i < tamanho; i++)
+                {
+                    if (Jogosol::getFuncDisp().top().getServico() == servico)
+                    {
+                        f = Jogosol::getFuncDisp().top();
+
+                        Jogosol::getFuncDisp().pop();
+
+                        f.addIndisp(horas);
+
+                        Jogosol::getFuncDisp().push(f);
+                        encontrou = true;
+                        //aqui
+                    }
+
+
+                    else
+                    {
+                        temp.push_back(Jogosol::getFuncDisp().top());
+                        Jogosol::getFuncDisp().pop();
+                    }
+                }
+
+                for (unsigned i = 0; i < temp.size(); i++)
+                {
+                    Jogosol::getFuncDisp().push(temp[i]);
+                }
+
+                if (encontrou == true)
+                {
+                    cout << "Funcionario atribuido: " << f.getNome() << endl;
+                    // aqui
+                }
+
+                else
+                {
+                    cout << "Nenhum funcionario pode realizar esse servico" << endl;
+                    //aqui
+                }
+            }
+
+            else
+            {
+                cout << "Horas gastas: ";
+                cin >> horas;
+
+                f = Jogosol::getFuncDisp().top();
+
+                Jogosol::getFuncDisp().pop();
+
+                f.addIndisp(horas);
+
+                Jogosol::getFuncDisp().push(f);
+
+                cout << "Funcionario atribuido: " << f.getNome() << endl;
+
+                //aqui
+            }
 
 
             break;

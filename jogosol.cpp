@@ -63,7 +63,7 @@ BST<Recorde> Jogosol::recordes(recorde);
 
 priority_queue<Funcionario> Jogosol::fila {};
 
-//unordered_set<Funcionario> Jogosol::tabela {};
+//  unordered_set<Funcionario> Jogosol::tabela {};
 
 void Jogosol::readFuncionarios()
 {
@@ -76,6 +76,26 @@ void Jogosol::readFuncionarios()
         Funcionario f;
         f.input(file);
         funcionarios.push_back(f);
+    }
+
+    file.close();
+}
+
+void Jogosol::readFuncionariosIndisp()
+{
+    ifstream file;
+
+    file.open("funcionarios.txt", ios::in);
+
+    string indisp, servico, nome;
+
+    while(!file.eof())
+    {
+        getline(file, nome, ';');
+        getline(file, servico, ';');
+        getline(file, indisp, ';');
+        Funcionario f(nome, servico, stoi(indisp));
+        fila.push(f);
     }
 
     file.close();

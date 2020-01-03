@@ -47,6 +47,8 @@ public:
     static unordered_set<Funcionario> getTabela();
     /// Leitura dos funcionários (não atletas) do ficheiro funcionarios.txt.
     void readFuncionarios();
+    /// Leitura da indisponibilidade dos funcionarios do ficheiro funcionariosserind.txt
+    void readFuncionariosIndisp();
     /// Leitura dos atletas do ficheiro atletas.txt.
     void readAtletas();
     /// Leitura dos medalhados do ficheiro medalhados.txt.
