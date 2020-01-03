@@ -312,7 +312,7 @@ void Menu::atletas() {
             break;
         default:
             cout << "Por favor introduza um valor valido" << endl;
-            funcionariosEAtletas();
+            atletas();
     }
 }
 
@@ -1918,4 +1918,103 @@ void Menu::continuar() {
 
 //--------------------------------------------------------------------------
 
+void Menu::recordesMenu(){
 
+    cout << endl << "_______________ RECORDES _______________" << endl << "|" << setw(40) << "|" << endl;
+    cout << "|   1 - Visualizar Recordes             |" << endl;
+    cout << "|   2 - Editar Recordes                 |" << endl;
+    cout << "|   3 - Voltar                          |" << endl;
+    cout << "|_______________________________________|" << endl;
+
+    int choice;
+    cout << endl << "  Enter your choice: ";
+    cin >> choice;
+    if (!cin.good())
+    {
+        cout << "Por favor introduza um valor valido";
+        cin.clear();
+        cin.ignore(INT_MAX, '\n');
+        recordesMenu();
+    }
+
+    switch(choice){
+        case 1:
+            //Visualizar Recordes
+            break;
+        case 2:
+
+            break;
+        case 3:
+            mainMenu();
+            break;
+        default:
+            cout << "Por favor introduza um valor valido" << endl;
+            recordesMenu();
+
+    }
+}
+
+void Menu::editarRecMenu(){
+
+    cout << endl << "_______________ RECORDES _______________" << endl << "|" << setw(40) << "|" << endl;
+    cout << "|   1 - Acrescentar Recorde             |" << endl;
+    cout << "|   2 - Modificar Recorde               |" << endl;
+    cout << "|   3 - Eliminar Recorde                |" << endl;
+    cout << "|   4 - Voltar                          |" << endl;
+    cout << "|_______________________________________|" << endl;
+
+    int choice;
+    cout << endl << "  Enter your choice: ";
+    cin >> choice;
+    if (!cin.good())
+    {
+        cout << "Por favor introduza um valor valido";
+        cin.clear();
+        cin.ignore(INT_MAX, '\n');
+        recordesMenu();
+    }
+
+    switch(choice){
+        case 1:
+            Jogosol::addRecorde();
+
+            continuar();
+            int choice1;
+            cout << endl << "  Enter your choice: ";
+            cin >> choice1;
+            if (!cin.good())
+            {
+                cout << "Por favor introduza um valor valido";
+                cin.clear();
+                cin.ignore(INT_MAX, '\n');
+                editarAtleta();
+            }
+
+            switch (choice1) {
+                case 1:
+                    editarRecMenu();
+                    break;
+                case 2:
+                    recordesMenu();
+                    break;
+                case 3:
+                    return;
+                default:
+                    cout << "Por favor introduza um valor valido" << endl;
+                    editarRecMenu();
+            }
+            break;
+        case 2:
+            //Mod
+            break;
+        case 3:
+            //Elim
+            break;
+        case 4:
+            recordesMenu();
+            break;
+        default:
+            cout << "Por favor introduza um valor valido" << endl;
+            editarRecMenu();
+    }
+}

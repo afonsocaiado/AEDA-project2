@@ -82,6 +82,10 @@ public:
     /// Menu genérico.
     /// Menu a ser apresentado em diversas siuações com escolhas diversas
     static void continuar();
+
+    void recordesMenu();
+
+    void editarRecMenu();
 };
 
 

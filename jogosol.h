@@ -65,6 +65,8 @@ public:
     ///
     /// @return
     static bool deleteFuncionario();
+
+    static void addRecorde();
 };
 
 #endif //TRABALHOAEDAPARTE1_JOGOSOL_H

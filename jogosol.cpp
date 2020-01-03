@@ -265,3 +265,26 @@ unordered_set<Funcionario> Jogosol::getTabela()
     return tabela;
 }
 */
+
+static void Jogosol::addRecorde() {
+    Data dataRec;
+    string d;
+    stringstream sd;
+    string local, atleta, modalidade, competicao;
+    cin.ignore();
+    cout << "Data (dd/mm/aaaa): ";
+    cin >> d; d += ";";
+    sd << d;
+    sd >> dataRec;
+    cout << "Local: ";
+    getline(cin, local);
+    cout << "Nome do Atleta: ";
+    getline(cin, atleta);
+    cout << "Modalidade: ";
+    getline(cin, modalidade);
+    cout << "Competicao: ";
+    getline(cin, competicao);
+
+    Recorde rec(dataRec, local, atleta, modalidade, competicao);
+    recordes.insert(rec);
+}
