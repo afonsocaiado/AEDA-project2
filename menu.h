@@ -86,6 +86,8 @@ public:
     void recordesMenu();
 
     void editarRecMenu();
+
+    void servicosMenu(Atleta &atleta);
 };
 
 

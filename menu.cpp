@@ -16,7 +16,7 @@ void Menu::mainMenu() {
     cout << "|   4 - Tabela de Medalhados            |" << endl;
     cout << "|   5 - Recordes                        |" << endl;
     cout << "|   6 - Contratar Funcionarios          |" << endl;
-    cout << "|   7 - Aplicar Servicos                |" << endl;
+    cout << "|   7 - Servicos                        |" << endl;
     cout << "|   8 - Exit Program                    |" << endl;
     cout << "|_______________________________________|" << endl;
 
@@ -99,94 +99,7 @@ void Menu::mainMenu() {
             }
 
             Atleta atleta = Jogosol::getVAtletas().at(choice1 - 1);
-            //Ja tem aqui o atleta que quer fazer um serviço (que sera introduzido pelo utilizador?)
-            //A seguir e so fazer o ponto 2 do enunciado
-            char sel;
-
-            while (sel != 'E' && sel != 'e' && sel != 'n' && sel != 'N')
-            {
-                cout << "Servico (Especifico/Normal)? ";
-                cin >> sel;
-            }
-
-            cin.ignore(100, '\n');
-
-            Funcionario f;
-            int horas;
-
-            if (sel == 'E' || sel == 'e')
-            {
-                string servico;
-
-                cout << "Servico a realizar: ";
-                getline(cin, servico);
-                cin.ignore();
-
-                vector<Funcionario> temp;
-
-                bool encontrou = false;
-
-                int tamanho = Jogosol::getFuncDisp().size();
-
-                for (unsigned i = 0; i < tamanho; i++)
-                {
-                    if (Jogosol::getFuncDisp().top().getServico() == servico)
-                    {
-                        f = Jogosol::getFuncDisp().top();
-
-                        Jogosol::getFuncDisp().pop();
-
-                        f.addIndisp(horas);
-
-                        Jogosol::getFuncDisp().push(f);
-                        encontrou = true;
-                        //aqui
-                    }
-
-
-                    else
-                    {
-                        temp.push_back(Jogosol::getFuncDisp().top());
-                        Jogosol::getFuncDisp().pop();
-                    }
-                }
-
-                for (unsigned i = 0; i < temp.size(); i++)
-                {
-                    Jogosol::getFuncDisp().push(temp[i]);
-                }
-
-                if (encontrou == true)
-                {
-                    cout << "Funcionario atribuido: " << f.getNome() << endl;
-                    // aqui
-                }
-
-                else
-                {
-                    cout << "Nenhum funcionario pode realizar esse servico" << endl;
-                    //aqui
-                }
-            }
-
-            else
-            {
-                cout << "Horas gastas: ";
-                cin >> horas;
-
-                f = Jogosol::getFuncDisp().top();
-
-                Jogosol::getFuncDisp().pop();
-
-                f.addIndisp(horas);
-
-                Jogosol::getFuncDisp().push(f);
-
-                cout << "Funcionario atribuido: " << f.getNome() << endl;
-
-                //aqui
-            }
-
+            servicosMenu(atleta);
 
             break;
         }
@@ -2016,5 +1929,128 @@ void Menu::editarRecMenu(){
         default:
             cout << "Por favor introduza um valor valido" << endl;
             editarRecMenu();
+    }
+}
+
+//--------------------------------------------------------------------------
+
+void Menu::servicosMenu(Atleta &atleta) {
+
+    cout << endl << "_______________ RECORDES _______________" << endl << "|" << setw(40) << "|" << endl;
+    cout << "|   1 - Iniciar Servico                 |" << endl;
+    cout << "|   2 - Terminar Servico                |" << endl;
+    cout << "|   3 - Voltar                          |" << endl;
+    cout << "|_______________________________________|" << endl;
+
+    int choice;
+    cout << endl << "  Enter your choice: ";
+    cin >> choice;
+    if (!cin.good())
+    {
+        cout << "Por favor introduza um valor valido";
+        cin.clear();
+        cin.ignore(INT_MAX, '\n');
+        recordesMenu();
+    }
+
+    switch (choice) {
+        case 1:{
+            char sel;
+
+            while (sel != 'E' && sel != 'e' && sel != 'n' && sel != 'N')
+            {
+                cout << "Servico (Especifico/Normal)? ";
+                cin >> sel;
+            }
+
+            cin.ignore(100, '\n');
+
+            Funcionario f;
+            int horas;
+
+            if (sel == 'E' || sel == 'e')
+            {
+                string servico;
+
+                cout << "Servico a realizar: ";
+                getline(cin, servico);
+                cin.ignore();
+
+                vector<Funcionario> temp;
+
+                bool encontrou = false;
+
+                int tamanho = Jogosol::getFuncDisp().size();
+
+                for (unsigned i = 0; i < tamanho; i++)
+                {
+                    if (Jogosol::getFuncDisp().top().getServico() == servico)
+                    {
+                        f = Jogosol::getFuncDisp().top();
+
+                        Jogosol::getFuncDisp().pop();
+
+                        f.addIndisp(horas);
+
+                        Jogosol::getFuncDisp().push(f);
+                        encontrou = true;
+                        //aqui
+                    }
+
+
+                    else
+                    {
+                        temp.push_back(Jogosol::getFuncDisp().top());
+                        Jogosol::getFuncDisp().pop();
+                    }
+                }
+
+                for (unsigned i = 0; i < temp.size(); i++)
+                {
+                    Jogosol::getFuncDisp().push(temp[i]);
+                }
+
+                if (encontrou == true)
+                {
+                    cout << "Funcionario atribuido: " << f.getNome() << endl;
+                    // aqui
+                }
+
+                else
+                {
+                    cout << "Nenhum funcionario pode realizar esse servico" << endl;
+                    //aqui
+                }
+            }
+
+            else
+            {
+                cout << "Horas gastas: ";
+                cin >> horas;
+
+                f = Jogosol::getFuncDisp().top();
+
+                Jogosol::getFuncDisp().pop();
+
+                f.addIndisp(horas);
+
+                Jogosol::getFuncDisp().push(f);
+
+                cout << "Funcionario atribuido: " << f.getNome() << endl;
+
+                //aqui
+            }
+
+            break;
+        }
+        case 2:
+            //Terminar Servico
+            break;
+        case 3:
+            mainMenu();
+            break;
+        default:
+            cout << "Por favor introduza um valor valido" << endl;
+            servicosMenu(atleta);
     }
 }
