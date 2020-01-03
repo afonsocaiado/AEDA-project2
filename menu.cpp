@@ -71,7 +71,7 @@ void Menu::mainMenu() {
             tabelaDeMedalhados();
             break;
         case 5:
-            //Recordes
+            recordesMenu();
             break;
         case 6:
             //Contratar
@@ -114,7 +114,7 @@ void Menu::mainMenu() {
             Funcionario f;
             int horas;
 
-            if (sel == 'E' && sel == 'e')
+            if (sel == 'E' || sel == 'e')
             {
                 string servico;
 
@@ -1942,7 +1942,7 @@ void Menu::recordesMenu(){
             //Visualizar Recordes
             break;
         case 2:
-
+            editarRecMenu();
             break;
         case 3:
             mainMenu();

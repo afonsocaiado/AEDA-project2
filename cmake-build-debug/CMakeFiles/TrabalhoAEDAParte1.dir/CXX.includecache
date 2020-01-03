@@ -36,6 +36,14 @@ vector
 modalidade.h
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/modalidade.h
 
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/jogosol.cpp
+jogosol.h
+C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/jogosol.h
+string
+-
+sstream
+-
+
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/jogosol.h
 fstream
 -
@@ -49,28 +57,6 @@ unordered_set
 -
 funcionario.h
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/funcionario.h
-
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/menu.cpp
-menu.h
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/menu.h
-jogosol.h
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/jogosol.h
-modalidade.h
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/modalidade.h
-iostream
--
-iomanip
--
-climits
--
-
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/menu.h
-iostream
--
-sstream
--
-jogosol.h
-C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/jogosol.h
 
 C:/Users/Fisica1/Desktop/AEDA/Trabalho/TrabalhoAEDAParte1/Trabalho-AEDA-2/modalidade.h
 resultado.h

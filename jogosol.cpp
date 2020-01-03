@@ -266,7 +266,7 @@ unordered_set<Funcionario> Jogosol::getTabela()
 }
 */
 
-static void Jogosol::addRecorde() {
+void Jogosol::addRecorde() {
     Data dataRec;
     string d;
     stringstream sd;
@@ -276,6 +276,7 @@ static void Jogosol::addRecorde() {
     cin >> d; d += ";";
     sd << d;
     sd >> dataRec;
+    cin.ignore();
     cout << "Local: ";
     getline(cin, local);
     cout << "Nome do Atleta: ";
