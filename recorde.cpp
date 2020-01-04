@@ -11,6 +11,26 @@ Recorde::Recorde(Data data, string local, string atleta, string modalidade, stri
     this->competicao = competicao;
 }
 
+string Recorde::getComp() const {
+    return competicao;
+}
+
+string Recorde::getModalidade() const {
+    return modalidade;
+}
+
+string Recorde::getAt() const {
+    return atleta;
+}
+
+string Recorde::getLoc() const {
+    return local;
+}
+
+Data Recorde::getData() const {
+    return data;
+}
+
 bool Recorde::operator<(const Recorde& r) const
 {
     if (modalidade < r.modalidade)
@@ -46,4 +66,10 @@ bool Recorde::operator== (const Recorde &r) const
         return true;
     }
     return false;
+}
+
+
+ostream &operator<<(ostream &o, const Recorde &r) {
+    o << r.modalidade << ";" << r.competicao << ";" << r.atleta << ";" << r.local << ";" << r.data.getDia() << "/" << r.data.getMes() << "/" << r.data.getAno() << ";";
+    return o;
 }

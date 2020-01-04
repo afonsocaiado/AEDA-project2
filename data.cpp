@@ -19,18 +19,15 @@ Data::Data(int dia, int mes, int ano)
     this->ano = ano;
 }
 
-int Data::getDia()
-{
+int Data::getDia() const {
     return dia;
 }
 
-int Data::getMes()
-{
+int Data::getMes() const {
     return mes;
 }
 
-int Data::getAno()
-{
+int Data::getAno() const {
     return ano;
 }
 

@@ -2,6 +2,7 @@
 
 #include <string>
 #include <sstream>
+#include <iomanip>
 
 using namespace std;
 
@@ -286,13 +287,56 @@ void Jogosol::addRecorde() {
     cout << "Competicao: ";
     getline(cin, competicao);
 
+    ofstream file;
+    file.open("recordes.txt", ios::app);
+
     Recorde rec(dataRec, local, atleta, modalidade, competicao);
     Recorde r = recordes.find(rec);
     if(r == notFound){
         recordes.insert(rec);
+        file << endl << rec;
     } else {
         recordes.remove(r);
+        //E preciso remover esta linha do txt
         recordes.insert(rec);
+        file << endl << rec;
     }
+    file.close();
+}
+
+void Jogosol::viewRecorde() {
+
+    int i = 1;
+    cout << endl << "_______________ RECORDES _______________" << endl << "|" << setw(40) << "|" << endl;
+    BSTItrLevel<Recorde> it(recordes);
+    while(!it.isAtEnd()){
+        cout << "|   " <<  i << " - " << it.retrieve().getModalidade() << " - " << it.retrieve().getComp() << setw(31-it.retrieve().getModalidade().size()-it.retrieve().getComp().size()) << "|" << endl;
+        it.advance();
+        i++;
+    }
+    cout << "|_______________________________________|" << endl;
+
+    int choice;
+    cout << endl << "Selecione o Recorde que quer visualizar: ";
+    cin >> choice;
+
+    /*if (!cin.good())
+    {
+        cout << "Por favor introduza um valor valido";
+        cin.clear();
+        cin.ignore(INT_MAX, '\n');
+        recordesMenu();
+    }*/
+    int ii = 1;
+    BSTItrLevel<Recorde> itt(recordes);
+    while(ii < choice){
+        itt.advance();
+        ii++;
+    }
+    cout << endl << "Modalidade: " << itt.retrieve().getModalidade() << endl;
+    cout << "Competicao: " << itt.retrieve().getComp() << endl;
+    cout << "Nome do atleta: " << itt.retrieve().getAt() << endl;
+    cout << "Local: " << itt.retrieve().getLoc() << endl;
+    cout << "Data: " << itt.retrieve().getData() << endl;
 
 }

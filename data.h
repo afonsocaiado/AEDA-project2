@@ -25,15 +25,15 @@ public:
     /// Método get do dia.
     ///
     /// @return Retorna o dia da data
-    int getDia();
+    int getDia() const;
     /// Método get do mês.
     ///
     /// @return Retorna o mês da data
-    int getMes();
+    int getMes() const;
     /// Método get do ano.
     ///
     /// @return Retorna o ano da data
-    int getAno();
+    int getAno() const;
     /// Método set do dia.
     void setDia(int dia);
     /// Método set do mês.
