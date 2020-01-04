@@ -2172,12 +2172,15 @@ void Menu::servicosMenu(Atleta &atleta) {
             //vetor temporario;
             vector<Funcionario> func;
             while(!Jogosol::getFuncDisp().empty()){
-                func.insert(func.begin(), Jogosol::getFuncDisp().top());
+                cout << "adicionou" << endl;
+                func.push_back(Jogosol::getFuncDisp().top());
                 Jogosol::getFuncDisp().pop();
+
             }
 
+            cout << func.size() << endl;
 
-            func[funcnum].subIndisp(numhoras);
+            func.at(funcnum).subIndisp(123);
 
 
             for(auto i: func){
