@@ -1973,6 +1973,7 @@ void Menu::servicosMenu(Atleta &atleta) {
 
                 for (unsigned i = 0; i < tamanho; i++)
                 {
+
                     if (Jogosol::getFuncDisp().top().getServico() == servico)
                     {
                         f = Jogosol::getFuncDisp().top();
@@ -1983,31 +1984,6 @@ void Menu::servicosMenu(Atleta &atleta) {
 
                         Jogosol::getFuncDisp().push(f);
                         encontrou = true;
-                        continuar();
-                        int choice1;
-                        cout << endl << "  Enter your choice: ";
-                        cin >> choice1;
-                        if (!cin.good())
-                        {
-                            cout << "Por favor introduza um valor valido";
-                            cin.clear();
-                            cin.ignore(INT_MAX, '\n');
-                            editarAtleta();
-                        }
-
-                        switch (choice1) {
-                            case 1:
-                                servicosMenu(atleta);
-                                break;
-                            case 2:
-                                mainMenu();
-                                break;
-                            case 3:
-                                return;
-                            default:
-                                cout << "Por favor introduza um valor valido" << endl;
-                                servicosMenu(atleta);
-                        }
                     }
 
 
@@ -2027,62 +2003,14 @@ void Menu::servicosMenu(Atleta &atleta) {
                 {
                     cout << "Funcionario atribuido: " << f.getNome() << endl;
 
-                    continuar();
-                    int choice1;
-                    cout << endl << "  Enter your choice: ";
-                    cin >> choice1;
-                    if (!cin.good())
-                    {
-                        cout << "Por favor introduza um valor valido";
-                        cin.clear();
-                        cin.ignore(INT_MAX, '\n');
-                        editarAtleta();
-                    }
 
-                    switch (choice1) {
-                        case 1:
-                            servicosMenu(atleta);
-                            break;
-                        case 2:
-                            mainMenu();
-                            break;
-                        case 3:
-                            return;
-                        default:
-                            cout << "Por favor introduza um valor valido" << endl;
-                            servicosMenu(atleta);
-                    }
                 }
 
                 else
                 {
                     cout << "Nenhum funcionario pode realizar esse servico" << endl;
 
-                    continuar();
-                    int choice1;
-                    cout << endl << "  Enter your choice: ";
-                    cin >> choice1;
-                    if (!cin.good())
-                    {
-                        cout << "Por favor introduza um valor valido";
-                        cin.clear();
-                        cin.ignore(INT_MAX, '\n');
-                        editarAtleta();
-                    }
 
-                    switch (choice1) {
-                        case 1:
-                            servicosMenu(atleta);
-                            break;
-                        case 2:
-                            mainMenu();
-                            break;
-                        case 3:
-                            return;
-                        default:
-                            cout << "Por favor introduza um valor valido" << endl;
-                            servicosMenu(atleta);
-                    }
                 }
             }
             else
@@ -2099,9 +2027,8 @@ void Menu::servicosMenu(Atleta &atleta) {
                 Jogosol::getFuncDisp().push(f);
 
                 cout << "Funcionario atribuido: " << f.getNome() << endl;
-
-                //aqui
             }
+
 
             break;
         }
@@ -2143,7 +2070,7 @@ void Menu::servicosMenu(Atleta &atleta) {
                 mainMenu();
             }
 
-            funcnum--; // -1 para obter o indice do funcionario no vetor com os elementos da fila
+            funcnum--; // -1 para obter o indice do funcionario no vetor com os elementos da Jogosol::getFuncDisp()
 
 
 

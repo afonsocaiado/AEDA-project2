@@ -38,8 +38,7 @@ Funcionario &Funcionario::operator=(const Funcionario &f)
     return *this;
 }
 
-string Funcionario::getNome()
-{
+string Funcionario::getNome() const {
     return nome;
 }
 
@@ -67,8 +66,7 @@ string Funcionario::getServico() const {
     return servico;
 }
 
-int Funcionario::getIndisp()
-{
+int Funcionario::getIndisp() const {
     return indisp;
 }
 
@@ -142,9 +140,9 @@ bool Funcionario::operator== ( Funcionario funcionario)
     return this->passaporte == funcionario.passaporte;
 }
 
-bool Funcionario::operator< (const Funcionario f) const
+bool Funcionario::operator< (Funcionario f) const
 {
-    return this->indisp < f.indisp;
+    return this->indisp < f.getIndisp();
 }
 
 void Funcionario::viewInfo() {

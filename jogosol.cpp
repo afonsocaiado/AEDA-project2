@@ -16,6 +16,9 @@ Jogosol::Jogosol()
 
     Jogosol::readRecordes();
 
+    Jogosol::readFuncionariosIndisp();
+
+
     Modalidade* atletismo = new Modalidade("atletismo");
     modalidades.push_back(atletismo);
     Modalidade* badminton = new Modalidade("badminton");
@@ -87,7 +90,7 @@ void Jogosol::readFuncionariosIndisp()
 {
     ifstream file;
 
-    file.open("funcionarios.txt", ios::in);
+    file.open("funcionariosserind.txt", ios::in);
 
     string indisp, servico, nome;
 
@@ -96,11 +99,17 @@ void Jogosol::readFuncionariosIndisp()
         getline(file, nome, ';');
         getline(file, servico, ';');
         getline(file, indisp, ';');
-        Funcionario f(nome, servico, stoi(indisp));
+        int iindisp = stoi(indisp);
+        Funcionario f(nome, servico, iindisp);
         fila.push(f);
+
+
+
     }
 
     file.close();
+
+
 }
 
 void Jogosol::readAtletas()
@@ -340,3 +349,5 @@ void Jogosol::viewRecorde() {
     cout << "Data: " << itt.retrieve().getData() << endl;
 
 }
+
+

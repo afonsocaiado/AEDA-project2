@@ -53,7 +53,7 @@ public:
     /// Método get do nome.
     ///
     /// @return Retorna o nome do funcionário
-    string getNome();
+    string getNome() const;
     /// Método get da função.
     ///
     /// @return Retorna a função do funcionário
@@ -85,7 +85,7 @@ public:
     /// Método get da indisponibilidade do funcionário
     ///
     /// @return Retorna as horas de indisponibilidade do funcionário
-    int getIndisp();
+    int getIndisp() const;
     /// Método set do nome.
     ///
     /// @param nome Nome para o qual o nome deve ser alterado
