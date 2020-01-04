@@ -2158,9 +2158,6 @@ void Menu::servicosMenu(Atleta &atleta) {
                 mainMenu();
             }
 
-
-
-
             //vetor temporario;
             vector<Funcionario> func;
             while(!Jogosol::getFuncDisp().empty()){
@@ -2170,14 +2167,21 @@ void Menu::servicosMenu(Atleta &atleta) {
 
             }
 
-            cout << func.size() << endl;
 
-            func.at(funcnum).subIndisp(123);
+            if(func.size()>funcnum){
+                func.at(funcnum).subIndisp(123);
 
-
-            for(auto i: func){
-                Jogosol::getFuncDisp().push(i);
+                for(auto i: func){
+                    Jogosol::getFuncDisp().push(i);
+                }
             }
+            else{
+                cout << "funcionario nao encontrado" << endl;
+            }
+
+
+
+
 
 
 
