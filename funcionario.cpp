@@ -128,11 +128,11 @@ void Funcionario::setDataPartida(Data dataPartida)
     this->dataPartida = dataPartida;
 }
 
-void Funcionario::addIndisp(int indisp){
+void Funcionario::addIndisp(unsigned indisp){
     this->indisp += indisp;
 }
 
-void Funcionario::subIndisp(int indisp)
+void Funcionario::subIndisp(unsigned indisp)
 {
     this->indisp -= indisp;
 }

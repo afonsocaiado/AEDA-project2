@@ -109,11 +109,11 @@ public:
     /// Método para incrementar a indisponibilidade do funcionário
     ///
     /// @param indisp Horas a incrementar na indisponibilidade do funcionário
-    void addIndisp(int indisp);
+    void addIndisp(unsigned indisp);
     /// Método para decrementar a indisponibilidade do funcionário
     ///
     /// @param indisp Horas a decrementar na indisponibilidade do funcionário
-    void subIndisp(int indisp);
+    void subIndisp(unsigned indisp);
     /// Método set do número de passaporte.
     ///
     /// @param pass Número para o qual o número do passaporte deve ser alterado

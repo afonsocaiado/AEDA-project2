@@ -3,6 +3,7 @@
 #include "modalidade.h"
 
 #include <iostream>
+#include <fstream>
 #include <iomanip>
 #include <climits>
 
@@ -2112,9 +2113,81 @@ void Menu::servicosMenu(Atleta &atleta) {
 
             break;
         }
-        case 2:
-            //Terminar Servico
+        case 2: {
+
+            /* ------------imprime lista dos funcionarios para serviço --------- */
+
+            ifstream file;
+            string s;
+            string lixo;
+            unsigned contador = 0;
+            cout << endl;
+
+            file.open("funcionariosserind.txt");
+
+            //imprime todos os funcionarios de funcionariosserind
+            while (!file.eof()) {
+                cout << ++contador << " - ";
+                getline(file, s, ';');
+                getline(file, lixo, '\n');
+                cout << s << endl;
+            }
+
+            /* ------------------------------------------------------------------- */
+
+            unsigned funcnum;
+            unsigned numhoras;
+
+
+            cout << "Introduza o funcionario que terminou o servico: ";
+
+
+            cin >> funcnum; //introduzir numero do funcionario atraves da lista apresentada no ecra
+            if (!cin.good())
+            {
+                cout << "Por favor introduza um valor valido";
+                cin.clear();
+                cin.ignore(INT_MAX, '\n');
+                mainMenu();
+            }
+
+            funcnum--; // -1 para obter o indice do funcionario no vetor com os elementos da fila
+
+
+
+
+            cout << endl<< "Introduza o número de horas do serviço: ";
+            cin >> numhoras;
+            if (!cin.good())
+            {
+                cout << "Por favor introduza um valor valido";
+                cin.clear();
+                cin.ignore(INT_MAX, '\n');
+                mainMenu();
+            }
+
+
+
+
+            //vetor temporario;
+            vector<Funcionario> func;
+            while(!Jogosol::getFuncDisp().empty()){
+                func.insert(func.begin(), Jogosol::getFuncDisp().top());
+                Jogosol::getFuncDisp().pop();
+            }
+
+
+            func[funcnum].subIndisp(numhoras);
+
+
+            for(auto i: func){
+                Jogosol::getFuncDisp().push(i);
+            }
+
+
+
             break;
+        }
         case 3:
             mainMenu();
             break;
